@@ -1,0 +1,9 @@
+[submodule "viewflow"]
+	path = viewflow
+	url = git@github.com:kmmbvnr/django-viewflow-pro.git
+[submodule "viewform"]
+	path = viewform
+	url = git@github.com:kmmbvnr/viewform.git
+[submodule "karenina"]
+	path = karenina
+	url = git@github.com:kmmbvnr/karenina.git
