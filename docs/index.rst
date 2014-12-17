@@ -1,24 +1,21 @@
-Reusable workflow library for Django http://viewflow.io.
+========
+Workflow automation suite for Django
+========
 
-Needle and thread to tie simple CRUD views and python functions in a complex business process.
+We can easily express people collaboration logic with words and pictures.
 
-Designed for:
+Let's do it with the code.
 
-- Back office automation
-- People collaboration software
-- Business process implementation
+.. image:: _static/ShipmentProcess.png
+   :width: 400px
 
-Features:
-
-- Simple integration with django views/signals/models
-- User and background tasks support
-- Complex Split/Joins for parallel task execution
-- Boilerplate urls registration and permission checks handling
 
 Contents
 =========
 
 .. toctree::
+   :maxdepth: 2
+
    introduction
    quick_start
    core_concepts

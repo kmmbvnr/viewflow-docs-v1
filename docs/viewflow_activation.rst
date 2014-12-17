@@ -2,10 +2,17 @@
 Activation
 ==========
 
-Activation
+Base
 ==========
 
 .. autoclass:: viewflow.activation.Activation
+
+
+Context
+=======
+
+.. autoclass:: viewflow.activation.Context
+
 
 StartActivation
 ===============
