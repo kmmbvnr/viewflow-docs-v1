@@ -1,18 +1,19 @@
-============
-Introduction
-============
-
+================
 What is Viewflow
 ================
 
-Django is the great,
+Viewflow is the :abbr:`EDSL (Embedded Domain Specific Language)` based
+on :abbr:`BPMN (Business Process Model and Notation)`, and additional
+staff required to get working web solution from analytical business
+description.
 
+From development point of view, viewflow introduces new layer "Flow"
+in addition to common django "Model-View-Template".
 
+Flow Pattern provides a way to explicit definition of user tasks order
+and dependencies, extracts business logic out of View layer.
 
-What is Viewflow suite
-======================
-
-Viewflow suite contains from 3 crutial parts.
+Viewflow suite contains from 3 crucial parts.
 
 * **viewflow** - workflow primitives library.
 * **viewform** - advanced form rendering library for django.
@@ -20,3 +21,6 @@ Viewflow suite contains from 3 crutial parts.
 
 You can easily use all of then together, or pick the right part, depends
 on level of customization that your want.
+
+.. image:: _static/Karenina.png
+   :width: 600px

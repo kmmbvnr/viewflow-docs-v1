@@ -1,22 +1,21 @@
-========
+============
 Workflow automation suite for Django
-========
+============
 
-We can easily express people collaboration logic with words and pictures.
+We can easily express people collaboration logic in words and pictures.
 
 Let's do it with the code.
 
 .. image:: _static/ShipmentProcess.png
    :width: 400px
 
-
-Contents
-=========
+Table of Contents
+=================
 
 .. toctree::
    :maxdepth: 2
 
-   introduction
+   introduction <introduction>
    quick_start
    core_concepts
    viewflow_api
@@ -33,9 +32,10 @@ v3.0 <http://www.gnu.org/licenses/agpl-3.0.html>`_
 
 Viewflow Pro has a commercial-friendly license allowing private forks
 and modifications of Viewflow. You can find the commercial license
-terms in COMM-LICENSE.  Please see `FAQ
-<https://github.com/kmmbvnr/django-viewflow/wiki/Pro-FAQ>`_ for more
-detail.
+terms in `COMM-LICENSE
+<https://github.com/viewflow/viewflow/blob/master/COMM-LICENSE.txt>`_.
+Please see `FAQ <https://github.com/viewflow/viewflow/wiki/Pro-FAQ>`_
+for more details.
 
 
 Copyright
