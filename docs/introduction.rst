@@ -7,21 +7,14 @@ on :abbr:`BPMN (Business Process Model and Notation)`, and additional
 staff required to get working web solution from analytical business
 description.
 
-Viewflow is built to help to use Business Process Modelling Notation
-as the software specification for you website. BPMN was introduced in
-2005, and became the most popular and successful notation for
-describing processes. BPMN has small set of basic elements, but
-provides rich way to express things that are impossible in many other
-business modelling notations.
-
-Viewflow takes care about task state management, concurrent updates,
-parallel task synchronization and user permission checking.
-
 From development point of view, viewflow introduces new layer "Flow"
 in addition to common django "Model-View-Template".
 
 Flow Pattern provides a way to explicit definition of user tasks order
-and dependencies, extracts business logic out of View layer.
+and dependencies, extracts business logic out of View layer. 
+
+Viewflow takes care about task state management, concurrent updates,
+parallel task synchronization and user permission checking.
 
 Viewflow suite contains from 3 crucial parts.
 

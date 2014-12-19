@@ -17,7 +17,9 @@ code. This makes views code simple and reusable for different flows.
 Also, Flow takes all boilerplate code for specifying permission and
 register django views in url config.
 
-See also :class:`viewflow.base.Flow`
+.. seealso::
+
+    :class:`viewflow.base.Flow`
 
 Nodes
 =====
@@ -28,6 +30,10 @@ could be transated to corresponding flow node class instance.
 Viewflow library contains nodes for user tasks that integrates django
 views, background script tasks for various backends like celery, and
 common gates for representing process flow ligic.
+
+.. seealso::
+
+    :doc:`viewflow_flow`
 
 
 Models
@@ -41,6 +47,10 @@ task.
 
 Abstract classes are also available, so you can use a flat
 strategy for datastore.
+
+.. seealso::
+
+    :doc:`viewflow_models`
 
 
 Activation
@@ -70,6 +80,9 @@ implementing Activation interface, it would be used instead of the
 pre-built activation class. In this case, for the view, initialize
 method are called before view.dispatch method.
 
+.. seealso::
+
+    :doc:`viewflow_activation`
 
 
 Error handling
@@ -91,3 +104,6 @@ admin.
 
 Error handling strategy could be customized in activation class.
 
+.. seealso::
+
+    :class:`viewflow.activation.Context`

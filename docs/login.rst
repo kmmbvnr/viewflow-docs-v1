@@ -2,7 +2,9 @@
 Workflow automation suite for Django
 ====================================
 
-Please, login to get access to documentation
+.. warning::
+
+    Please, login to get access to documentation
 
 
 Login
