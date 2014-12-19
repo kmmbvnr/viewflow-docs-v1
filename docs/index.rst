@@ -1,6 +1,6 @@
-============
+====================================
 Workflow automation suite for Django
-============
+====================================
 
 We can easily express people collaboration logic in words and pictures.
 
