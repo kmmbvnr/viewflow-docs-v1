@@ -18,6 +18,7 @@ Table of Contents
    introduction <introduction>
    quick_start
    core_concepts
+   tutorials
    viewflow_api
    viewform_api
    karenina

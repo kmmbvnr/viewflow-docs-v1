@@ -2,8 +2,10 @@
 Flow
 ====
 
-Base
-====
+.. autoclass:: viewflow.base.Flow
+
+Nodes
+=====
 
 .. autoclass:: viewflow.flow.base.Node
 

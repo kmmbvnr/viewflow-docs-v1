@@ -17,6 +17,8 @@ code. This makes views code simple and reusable for different flows.
 Also, Flow takes all boilerplate code for specifying permission and
 register django views in url config.
 
+See also :class:`viewflow.base.Flow`
+
 Nodes
 =====
 

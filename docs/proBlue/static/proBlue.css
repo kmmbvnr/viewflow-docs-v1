@@ -62,6 +62,18 @@ div.footer {
 div.footer a {
     color: #444;
 }
+
+*[id]:before {
+  content:"";
+  display:block;
+  height:65px; /* fixed header height*/
+  margin:-65px 0 0; /* negative fixed header height */
+}
+
+dt:target, .highlighted {
+  background-color: transparent;
+}
+
 div.footer a:hover, div.related a:hover {
 border-bottom:1px solid #4362b0;
 } 
