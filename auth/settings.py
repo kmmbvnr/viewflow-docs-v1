@@ -56,11 +56,7 @@ AUTHENTICATION_BACKENDS = (
     'social.backends.facebook.FacebookAppOAuth2',  # fa-facebook-square
     'social.backends.facebook.FacebookOAuth2',
 
-    'social.backends.google.GoogleOpenId',  # fa-google-plus-square
-    'social.backends.google.GoogleOAuth2',
-    'social.backends.google.GoogleOAuth',
-    'social.backends.google.GooglePlusAuth',
-    'social.backends.google.GoogleOpenIdConnect',
+    'social.backends.google.GoogleOAuth2',  # fa-google-plus-square
 
     'social.backends.linkedin.LinkedinOAuth',  # fa-linkedin-square
     'social.backends.linkedin.LinkedinOAuth2',
