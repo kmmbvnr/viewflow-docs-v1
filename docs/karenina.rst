@@ -4,6 +4,9 @@ Karenina
 
 Quickstart goodies for happy business apps and internal tools development with django.
 
+.. image:: _static/Karenina.png
+   :width: 600px
+
 
 Quick Start
 ===========
