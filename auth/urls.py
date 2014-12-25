@@ -30,6 +30,8 @@ def serve(request):
         file_name = "_build/index.html"
     elif request.path.endswith('.html'):
         file_name = '_build/{}'.format(request.path.rsplit('/', 1)[-1])
+    elif request.path.startswith('/_images/') and request.path.endswith('.png'):
+        file_name = '_build/_images/{}'.format(request.path.rsplit('/', 1)[-1])
     elif request.path.endswith('.js') or request.path.endswith('.css') or request.path.endswith('.png'):
         file_name = '_build/_static/{}'.format(request.path.rsplit('/', 1)[-1])
 
