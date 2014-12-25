@@ -27,3 +27,9 @@ on level of customization that your want.
 
 .. image:: _static/Karenina.png
    :width: 600px
+
+.. seealso::
+   Announcement on `Reddit <http://www.reddit.com/r/django/comments/2a6qvr/anyone_have_experience_with_finite_state_machines/cit9tyj>`_
+
+.. seealso::
+   Historical review on `Hacker News <https://news.ycombinator.com/item?id=8786447>`_

@@ -3,9 +3,11 @@ Activation
 ==========
 
 Base
-==========
+====
 
-.. autoclass:: viewflow.activation.Activation
+
+   .. autoclass:: viewflow.activation.Activation
+      :members:
 
 
 Context
@@ -18,28 +20,29 @@ StartActivation
 ===============
 
 .. autoclass:: viewflow.activation.StartActivation
+      :members:
 
-StartViewActivation
-===================
-
-.. autoclass:: viewflow.activation.StartViewActivation
 
 ViewActivation
 ==============
 
 .. autoclass:: viewflow.activation.ViewActivation
+      :members:
 
 AbstractGateActivation
 ======================
 
 .. autoclass:: viewflow.activation.AbstractGateActivation
+      :members:
 
 AbstractJobActivation
 =====================
 
 .. autoclass:: viewflow.activation.AbstractJobActivation
+      :members:
 
 EndActivation
 =============
 
 .. autoclass:: viewflow.activation.EndActivation
+      :members:
