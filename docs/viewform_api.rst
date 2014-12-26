@@ -149,15 +149,22 @@ API
 ===
 
 .. autoclass:: viewform.base.Layout
+      :members:
 
 .. autoclass:: viewform.base.Span
+      :members:
 
 .. autoclass:: viewform.base.Column
+      :members:
 
 .. autoclass:: viewform.base.Row
+      :members:
 
 .. autoclass:: viewform.base.Inline
+      :members:
 
 .. autoclass:: viewform.base.Fieldset
+      :members:
 
 .. autoclass:: viewform.base.LayoutMixin
+      :members:

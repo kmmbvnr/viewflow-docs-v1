@@ -15,3 +15,4 @@ Viewflow API
    viewflow_signals
    viewflow_test
    viewflow_admin
+   viewflow_contrib

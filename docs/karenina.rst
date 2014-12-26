@@ -59,34 +59,46 @@ karenina.modules
 ----------------
 
 .. autoclass:: karenina.modules.apps.BaseModulesConfig
+      :members:
 
 .. autoclass:: karenina.modules.apps.ModulesDiscoverConfig
+      :members:
 
 .. autoclass:: karenina.modules.base.Module
+      :members:
 
 .. autoclass:: karenina.modules.base.InstallableModule
+      :members:
 
 .. autofunction:: karenina.modules.context_processors.modules
 
 .. autoclass:: karenina.modules.models.Module
+      :members:
 
 .. autoclass:: karenina.modules.models.ModuleManager
+      :members:
 
 .. autoclass:: karenina.modules.registry.Registry
+      :members:
 
 .. autoclass:: karenina.modules.urlconf.ModuleURLResolver
+      :members:
 
 
 karenina.management
 -------------------
 
 .. autoclass:: karenina.management.modules.Admin
+      :members:
 
 .. autoclass:: karenina.management.views.modules_list
+      :members:
 
 karenina.workflow
 -----------------
 
 .. autoclass:: karenina.workflow.modules.Workflow
+      :members:
 
 .. autoclass:: karenina.workflow.flowsite.FlowSite
+      :members:

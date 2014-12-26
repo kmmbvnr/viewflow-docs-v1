@@ -1,12 +1,32 @@
 {%- extends "basic/layout.html" %}
 
 
-{%- block rootrellink %}
-<li><a href="http://viewflow.io" style="padding: 21px; padding-top: 23px; padding-bottom: 22px; background-color: #333;margin-right:1em">
-  <i class="fa fa-arrow-circle-o-left"></i> Back to Viewflow.io</a></li>
-<li><a href="{{ pathto(master_doc) }}">{{ shorttitle|e }}</a></li>
-{%- endblock %}
+{%- macro relbar2() %}
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>{{ _('Navigation') }}</h3>
+      <ul>
+        {%- for rellink in rellinks %}
+        <li class="right" {% if loop.first %}style="margin-right: 10px"{% endif %}>
+          <a href="{{ pathto(rellink[0]) }}" title="{{ rellink[1]|striptags|e }}"
+             {{ accesskey(rellink[2]) }}>{{ rellink[3] }}</a>
+          {%- if not loop.first %}{{ reldelim2 }}{% endif %}</li>
+        {%- endfor %}
+        {%- block rootrellink %}
+        <li><a href="http://viewflow.io" style="padding: 21px; padding-top: 23px; padding-bottom: 22px; background-color: #333;margin-right:1em">
+           <i class="fa fa-arrow-circle-o-left"></i> Back to Viewflow.io</a></li>
+        <li><a href="{{ pathto(master_doc) }}">{{ shorttitle|e }}</a></li>
+        {%- endblock %}
+        {%- for parent in parents %}
+          <li>{{ reldelim1 }} <a href="{{ parent.link|e }}" {% if loop.last %}{{ accesskey("U") }}{% endif %}>{{ parent.title }}</a></li>
+        {%- endfor %}
+        {%- block relbaritems %} {% endblock %}
+      </ul>
+    </div>
+{%- endmacro %}
 
+
+
+{%- block relbar1 %}{{ relbar2() }}{% endblock %}
 {%- block relbar2 %}{% endblock %}
 {%- block sidebarsearch %}{%- endblock %}
 {%- block sidebarsourcelink %}{%- endblock %}
