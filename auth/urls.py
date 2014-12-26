@@ -10,7 +10,7 @@ from django.views import static
 BotNames = [
     'Googlebot', 'Slurp', 'Twiceler', 'msnbot', 'KaloogaBot',
     'YodaoBot', '"Baiduspider', 'googlebot', 'Speedy Spider',
-    'DotBot']
+    'DotBot', 'YandexBot']
 
 
 def is_crawler(request):
