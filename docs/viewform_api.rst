@@ -101,7 +101,7 @@ classes, but used to determine relative fields width. Each row occupies
 in 6 grid coulmns each, and in Row(Span2('elem1'), 'elem2') `elem1`
 would be rendered in 8 grid columns, and `elem2` in 4 grid columns.
 
-Layouts rendering itself is specified in template. See
+Layouts rendering is specified in the template. See
 templates/viewform/<tempalte_pack>/layout code folder for details.
 
 
