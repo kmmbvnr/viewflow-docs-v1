@@ -122,7 +122,7 @@ Integration with Karenina
 See :doc:`karenina` installation and configuration instructions.
 
 With karenina you don't need to explicitly specify urls for each flow, just register
-the from in the karenina.workflow module, in the flows.py::
+the flow class in the karenina.workflow module, in the flows.py::
 
     from karenina.workflow import workflow
 
