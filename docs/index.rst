@@ -20,7 +20,7 @@ Table of Contents
    core_concepts
    tutorials
    viewflow_api
-   viewform_api
+   django_material
    karenina
 
 
