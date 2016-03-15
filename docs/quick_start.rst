@@ -114,19 +114,3 @@ To make the above code work just put the following flow definition in `flows.py`
 
 Your Hello World process is ready to go. If you run the development server
 locally, go to http://localhost:8000/helloworld/ and step through the workflow.
-
-
-Integration with Karenina
-=========================
-
-See :doc:`karenina` installation and configuration instructions.
-
-With karenina you don't need to explicitly specify urls for each flow, just register
-the flow class in the karenina.workflow module, in the flows.py::
-
-    from karenina.workflow import workflow
-
-    class HelloWorldFlow(Flow):
-        ...
-
-    workflow.register(HelloWorldFlow)

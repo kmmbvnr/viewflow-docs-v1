@@ -15,12 +15,6 @@ and dependencies, extracts business logic from the View layer.
 Viewflow takes care about task state management, concurrent updates,
 parallel task synchronization and user permission checking.
 
-Viewflow suite consists of the 3 crucial parts.
-
-* **viewflow** - workflow primitives library.
-* **viewform** - advanced form rendering library for django.
-* **karenina** - prebuilt modular workflow interface
-
 You can easily use all of then together, or pick the right part, depending
 on the level of customization you want.
 

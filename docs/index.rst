@@ -21,7 +21,6 @@ Table of Contents
    tutorials
    viewflow_api
    django_material
-   karenina
 
 
 License 

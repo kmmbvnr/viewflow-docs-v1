@@ -1,10 +1,7 @@
 [submodule "viewflow"]
 	path = viewflow
-	url = git@github.com:kmmbvnr/django-viewflow-pro.git
+	url = git@github.com:kmmbvnr/viewflow-pro.git
 	branch = docs
-[submodule "karenina"]
-	path = karenina
-	url = git@github.com:kmmbvnr/karenina.git
 [submodule "django-material"]
 	path = django-material
 	url = git@github.com:viewflow/django-material.git

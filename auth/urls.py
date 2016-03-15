@@ -12,6 +12,11 @@ BotNames = [
     'YodaoBot', '"Baiduspider', 'googlebot', 'Speedy Spider',
     'DotBot', 'YandexBot']
 
+OpenPages = [
+    "_build/index.html",
+    "_build/introduction.html",
+    '_build/django_material.html'
+]
 
 def is_crawler(request):
     user_agent = request.META.get('HTTP_USER_AGENT', None)
@@ -36,7 +41,7 @@ def serve(request):
         file_name = '_build/_static/{}'.format(request.path.rsplit('/', 1)[-1])
 
     if file_name.endswith('.html') and not request.user.is_authenticated():
-        if file_name not in ["_build/index.html", "_build/introduction.html", '_build/django_material.html'] and not is_crawler(request):
+        if file_name not in OpenPages and not is_crawler(request):
             file_name = "_build/login.html"
 
     absolute_path = os.path.join(settings.BASE_DIR, 'docs', file_name)
