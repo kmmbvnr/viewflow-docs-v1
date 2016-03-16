@@ -13,6 +13,4 @@ Viewflow API
    viewflow_views
    viewflow_tags
    viewflow_signals
-   viewflow_test
-   viewflow_admin
    viewflow_contrib

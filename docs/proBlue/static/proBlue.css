@@ -13,11 +13,16 @@
 
 @import url(http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css);
 /* -- page layout ----------------------------------------------------------- */
- 
+
+html, body {
+    height: 100%;
+}
+
 body {
     font-family: 'Droid Sans', helvetica, arial, serif;
     font-size: 100%;
     background-color: #111111;
+    background-color: #fafafa;
     color: #555555;
     margin: 0;
     padding: 0;
@@ -109,6 +114,7 @@ div.sphinxsidebar {
     width: 215px;
     position:fixed;
     margin-left: 0;
+    background-color: #ececec;
 }
 
 div.sphinxsidebar a {
@@ -339,4 +345,20 @@ tt {
 
 #table-of-contents ul {
     padding-left: 2em;
+}
+
+span.header {
+    font-size: 160%;
+    color: #555;
+    display: block;
+    line-height: 240%
+}
+
+.section {
+    max-width: 800px;
+    font-size: 16px;
+}
+
+pre {
+    font-size: 12px;
 }

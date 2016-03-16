@@ -17,10 +17,14 @@ Table of Contents
 
    introduction <introduction>
    quick_start
+   cookbook
    core_concepts
    tutorials
    viewflow_api
-   django_material
+   material_admin
+   material_forms
+   material_frontend
+   viewflow_frontend
 
 
 License 

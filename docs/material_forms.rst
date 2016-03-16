@@ -1,6 +1,6 @@
-================
-Django Material
-================
+==============
+Material Forms
+==============
 
 Template driven form rendering for django
 

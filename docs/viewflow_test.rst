@@ -1,5 +1,0 @@
-=======
-Testing
-=======
-
-.. automodule:: viewflow.test
