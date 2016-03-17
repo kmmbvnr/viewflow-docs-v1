@@ -2,16 +2,22 @@
 Material Forms
 ==============
 
+http://forms.viewflow.io/
+
 Template driven form rendering for django
 
 * Easy redefinition of particular fields rendering
 * Strong python/html code separation
-* Complex form layouts
+* Complex form layouts support
 
+.. image:: _static/MaterialForm.png
+   :width: 800px
+
+  
 Installation
 ============
 
-django-material tested with Python 2.7/3.3, django 1.6/1.7::
+django-material tested with Python 2.7/3.4/3.5, django 1.8/1.9::
 
     pip install django-material
 
@@ -21,12 +27,8 @@ And add it into INSTALLED_APPS settings
 
     INSTALLED_APPS = (
          'material',
-         'material.admin',
          ...
     )
-
-*NOTE:* 'material.admin' must be added before 'django.contrib.admin'
-
 
 Quick start
 ===========

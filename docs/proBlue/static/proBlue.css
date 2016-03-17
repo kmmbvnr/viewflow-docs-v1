@@ -362,3 +362,13 @@ span.header {
 pre {
     font-size: 12px;
 }
+
+
+dl.class {
+    padding-top: 10px;
+}
+
+dl.class:not(:last-child) {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+}

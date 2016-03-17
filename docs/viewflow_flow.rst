@@ -5,8 +5,8 @@ Flow
 .. autoclass:: viewflow.base.Flow
       :members:
 
-Nodes
-=====
+Base Node
+=========
 
 .. autoclass:: viewflow.flow.base.Node
       :members:
@@ -78,6 +78,15 @@ Signals tasks
 .. autoclass:: viewflow.flow.signal.Signal
       :members:
 
+Subprocesses
+============
+
+.. autoclass:: viewflow.flow.subprocess.Subprocess
+      :members:
+
+.. autoclass:: viewflow.flow.subprocess.NSubprocess
+      :members:
+         
 Gates
 =====
 .. image:: _static/GateTask.png
@@ -106,6 +115,11 @@ Gates
 .. autoclass:: viewflow.flow.gates.Split
       :members:
 
+Obsolete
+========
+
+.. autoclass:: viewflow.flow.obsolete.Obsolete
+
 End
 ===
 
@@ -113,4 +127,5 @@ End
 
 .. autoclass:: viewflow.flow.end.End
       :members:
+
 

@@ -1,10 +1,8 @@
-====================================
-Workflow automation suite for Django
-====================================
+=========================
+Reusable Workflow Library
+=========================
 
-We can easily express people collaboration logic in words and pictures.
-
-Let's do it with the code.
+Build better Business Web apps more quickly and with less code.
 
 .. image:: _static/ShipmentProcess.png
    :width: 400px

@@ -15,8 +15,11 @@ BotNames = [
 OpenPages = [
     "_build/index.html",
     "_build/introduction.html",
-    '_build/django_material.html'
+    '_build/material_admin.html'
+    '_build/material_forms.html'
+    '_build/material_frontend.html'
 ]
+
 
 def is_crawler(request):
     user_agent = request.META.get('HTTP_USER_AGENT', None)

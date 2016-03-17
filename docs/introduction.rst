@@ -1,10 +1,6 @@
 ============
 Introduction
 ============
-.. raw:: html
-         
-    <span class="header">Build better Business Web apps more quickly and with less code.</span>
-
 
 Viewflow is the workflow library based on BPMN concepts. BPMN -
 business process modeling and notations - is the wide adopted industry
@@ -28,3 +24,6 @@ django forms and views code.
 
 .. seealso::
    Historical review on `Hacker News <https://news.ycombinator.com/item?id=8786447>`_
+
+.. seealso::
+   Building a Django app with Viewflow  on `PyCon Canada 2015 Youtube Chanel <https://www.youtube.com/watch?v=-KBN0zaZV-M>`_
