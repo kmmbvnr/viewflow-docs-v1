@@ -15,9 +15,9 @@ BotNames = [
 OpenPages = [
     "_build/index.html",
     "_build/introduction.html",
-    '_build/material_admin.html'
-    '_build/material_forms.html'
-    '_build/material_frontend.html'
+    '_build/material_admin.html',
+    '_build/material_forms.html',
+    '_build/material_frontend.html',
 ]
 
 
