@@ -68,7 +68,7 @@ To make the above code work just put the following flow definition in `flows.py`
     from viewflow import flow, lock
     from viewflow.base import this, Flow
     from viewflow.contrib import celery
-    from viewflow.views import StartView, ProcessView
+    from viewflow.views import StartProcessView, ProcessView
 
     from . import models, tasks
 
@@ -77,7 +77,7 @@ To make the above code work just put the following flow definition in `flows.py`
         process_cls = models.HelloWorldProcess
         lock_impl = lock.select_for_update_lock
 
-        start = flow.Start(StartView, fields=["text"]) \
+        start = flow.Start(StartProcessView, fields=["text"]) \
             .Permission(auto_create=True) \
             .Next(this.approve)
 
@@ -102,14 +102,15 @@ To make the above code work just put the following flow definition in `flows.py`
     from viewflow import views as viewflow
     from .helloworld.flows import HelloWorldFlow
 
-    urlpatterns = patterns('',
+    urlpatterns = [
         url(r'^helloworld/', include([
             HelloWorldFlow.instance.urls,
             url('^$', viewflow.ProcessListView.as_view(), name='index'),
             url('^tasks/$', viewflow.TaskListView.as_view(), name='tasks'),
             url('^queue/$', viewflow.QueueListView.as_view(), name='queue'),
             url('^details/(?P<process_pk>\d+)/$', viewflow.ProcessDetailView.as_view(), name='details'),
-        ], namespace=HelloWorldFlow.instance.namespace), {'flow_cls': HelloWorldFlow}))
+        ], namespace=HelloWorldFlow.instance.namespace), {'flow_cls': HelloWorldFlow})
+    ]
 
 
 Your Hello World process is ready to go. If you run the development server

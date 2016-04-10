@@ -44,7 +44,7 @@ In the flows.py file, register a flow in the frontend
 
 .. code-block:: python
 
-    from viewflow import frontent
+    from viewflow import frontend
 
     class MyFlow(Flow):
         ...
