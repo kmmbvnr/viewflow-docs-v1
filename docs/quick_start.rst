@@ -119,7 +119,7 @@ locally, go to http://localhost:8000/helloworld/ and step through the workflow.
 
 You can checkout working
 `helloworld <https://github.com/viewflow/cookbook/tree/master/viewflow_helloworld>`_
-or `helloworld-pro <<https://github.com/viewflow/cookbook/tree/master/viewflow_pro_helloworld>>`_
+or `helloworld-pro <https://github.com/viewflow/cookbook/tree/master/viewflow_pro_helloworld>`_
 sample from the viewflow `cookbook <https://github.com/viewflow/cookbook/>`_
 
 .. seealso::
