@@ -103,6 +103,7 @@ To make the above code work just put the following flow definition in `flows.py`
     from .helloworld.flows import HelloWorldFlow
 
     urlpatterns = [
+        ...
         url(r'^helloworld/', include([
             HelloWorldFlow.instance.urls,
             url('^$', viewflow.ProcessListView.as_view(), name='index'),
@@ -115,6 +116,11 @@ To make the above code work just put the following flow definition in `flows.py`
 
 Your Hello World process is ready to go. If you run the development server
 locally, go to http://localhost:8000/helloworld/ and step through the workflow.
+
+You can checkout working
+`helloworld <https://github.com/viewflow/cookbook/tree/master/viewflow_helloworld>`_
+or `helloworld-pro <<https://github.com/viewflow/cookbook/tree/master/viewflow_pro_helloworld>>`_
+sample from the viewflow `cookbook <https://github.com/viewflow/cookbook/>`_
 
 .. seealso::
 
