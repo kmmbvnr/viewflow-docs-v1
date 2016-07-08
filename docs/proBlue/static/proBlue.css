@@ -34,7 +34,7 @@ div.documentwrapper {
 }
 
 div.bodywrapper {
-    margin: 0 0 0 213px;
+    margin: 0 0 0 290px;
 }
 
 hr{
@@ -86,6 +86,7 @@ div.related {
   position:fixed;
   top: 0px;
   background-color: #46b0c3;
+  background-color: #357a38;
   line-height: 65px;
   color: #ffffff;
   text-shadow: 0px 1px 1px rgba(0,0,0,0.4);
@@ -111,7 +112,7 @@ div.related + div + div.related {
 div.sphinxsidebar {
     font-size: 0.9em;
     line-height: 1.5em;
-    width: 215px;
+    width: 290px;
     position:fixed;
     margin-left: 0;
     background-color: #ececec;

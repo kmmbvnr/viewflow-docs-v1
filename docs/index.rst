@@ -19,8 +19,8 @@ Table of Contents
    core_concepts
    tutorials
    viewflow_api
-   material_admin
    material_forms
+   material_admin
    material_frontend
    viewflow_frontend
 
