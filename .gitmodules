@@ -4,4 +4,5 @@
 	branch = docs
 [submodule "django-material"]
 	path = django-material
-	url = git@github.com:viewflow/django-material.git
+	url =  git@github.com:kmmbvnr/material-pro.git
+
