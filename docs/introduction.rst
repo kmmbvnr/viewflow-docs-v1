@@ -19,6 +19,21 @@ describe all real life business process scenarios. Viewflow helps you
 to build a bpmn diagram in code and keep business logic separate from
 django forms and views code.
 
+Viewflow suite contains 4 libraries, each one could be used
+independenply from others.
+
+.. toctree::
+   :maxdepth: 2
+
+   viewflow_api
+   material_forms
+   material_admin
+   material_frontend
+   viewflow_frontend
+
+Using them all together allows to achive same speed of development comparable with
+modern BPMN process build tools.
+
 .. seealso::
    Announcement on `Reddit <http://www.reddit.com/r/django/comments/2a6qvr/anyone_have_experience_with_finite_state_machines/cit9tyj>`_
 

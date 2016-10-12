@@ -16,7 +16,14 @@ OpenPages = [
     "_build/index.html",
     "_build/introduction.html",
     '_build/material_admin.html',
+    '_build/admin_customization.html',
+    '_build/admin_quickstart.html',
+    '_build/admin_unsupported.html',
     '_build/material_forms.html',
+    '_build/forms_quickstart.html',
+    '_build/forms_templatetags.html',
+    '_build/forms_layout.html',
+    '_build/forms_formsets.html',
     '_build/material_frontend.html',
 ]
 
