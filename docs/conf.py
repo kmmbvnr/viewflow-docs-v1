@@ -100,7 +100,7 @@ pygments_style = 'sphinx'
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
-html_theme = 'proBlue'
+html_theme = 'viewflow'
 html_theme_path = ["."]
 
 # Theme options are theme-specific and customize the look and feel of a theme
@@ -120,7 +120,7 @@ html_title = 'Viewflow Documentation'
 
 # The name of an image file (relative to this directory) to place at the top
 # of the sidebar.
-#html_logo = None
+html_logo = './static/logo.png'
 
 # The name of an image file (within the static path) to use as favicon of the
 # docs.  This file should be a Windows icon file (.ico) being 16x16 or 32x32

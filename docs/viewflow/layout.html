@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html {% if language is not none %} lang="{{ language }}"{% endif %}>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset={{ encoding }}" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        {{ metatags }}
+        {%- block htmltitle %}<title>{{ title|striptags|e }}{{ titlesuffix }}</title>{%- endblock %}
+        {%- if favicon %}<link rel="shortcut icon" href="{{ pathto('_static/' + favicon, 1) }}"/>{%- endif %}
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/idea.min.css">      
+        <link rel="stylesheet" href="{{ pathto('_static/' + style, 1) }}" type="text/css" />
+        <link rel="stylesheet" href="{{ pathto('_static/pygments.css', 1) }}" type="text/css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.perfect-scrollbar/0.6.12/css/perfect-scrollbar.min.css" type="text/css" />
+        {%- for cssfile in css_files %}
+            <link rel="stylesheet" href="{{ pathto(cssfile, 1) }}" type="text/css" />
+        {%- endfor %}
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/turbolinks/5.0.0/turbolinks.min.js"></script>
+        <script type="text/javascript">
+          Turbolinks.start();
+        </script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.perfect-scrollbar/0.6.12/js/perfect-scrollbar.jquery.min.js"></script>
+    </head>
+    <body>
+        <header>
+            <ul id="slide-out" class="side-nav fixed">
+                {%- block sidebarlogo %}{%- if logo %}
+                <li>
+                    <div class="userView center-align ">
+                        <img class="logo" src="{{ pathto('_static/' + logo, 1) }}" alt="Logo"/>
+                    </div>
+                </li>
+                {%- endif %}{%- endblock %}
+                {%- block sidebartoc %}
+                    {%- include "localtoc.html" %}
+                {%- endblock %}
+            </ul>
+        </header>
+        <div style="z-index:-1;background-color:#424242;height:109px;width:100%;position:absolute;top:0">&nbsp;</div>
+        <main>
+            {%- block document %}
+            <div class="document container">
+                <div class="row">
+                    <div class="col s12 m10 l9">
+                        {% block body %} {% endblock %}
+                    </div>
+                </div>
+            </div>
+            {%- endblock document %}
+        </main>
+        <footer class="page-footer">
+           {%- if show_copyright %}
+                {%- if hasdoc('copyright') %}
+                    {% trans path=pathto('copyright'), copyright=copyright|e %}&#169; <a href="{{ path }}">Copyright</a> {{ copyright }}.{% endtrans %}
+                 {%- else %}
+                     {% trans copyright=copyright|e %}&#169; Copyright {{ copyright }}.{% endtrans %}
+                 {%- endif %}
+            {%- endif %}
+            {%- if last_updated %}
+                 {% trans last_updated=last_updated|e %}Last updated on {{ last_updated }}.{% endtrans %}
+           {%- endif %}
+        </footer>
+        <script type="text/javascript">
+          $('#slide-out').perfectScrollbar();
+        </script>
+    </body>
+</html>

@@ -50,9 +50,9 @@ def serve(request):
     elif request.path.endswith('.js') or request.path.endswith('.css') or request.path.endswith('.png'):
         file_name = '_build/_static/{}'.format(request.path.rsplit('/', 1)[-1])
 
-    if file_name.endswith('.html') and not request.user.is_authenticated():
-        if file_name not in OpenPages and not is_crawler(request):
-            file_name = "_build/login.html"
+    # if file_name.endswith('.html') and not request.user.is_authenticated():
+    #    if file_name not in OpenPages and not is_crawler(request):
+    #        file_name = "_build/login.html"
 
     absolute_path = os.path.join(settings.BASE_DIR, 'docs', file_name)
 

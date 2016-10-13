@@ -1,0 +1,95 @@
+/* Common elemen styles */
+h1 {
+    font-size: 3rem;
+}
+h2, h3 {
+    font-weight: 300;
+    font-size: 3rem;
+}
+
+h1 .headerlink,
+h2 .headerlink,
+dt .headerlink{
+    display: none;
+    color:#424242; /*  grey darken-3 */
+    font-weight: 300;
+    padding-left: 10px;
+    vertical-align: top;
+}
+
+h1 .headerlink,
+h2 .headerlink {
+    font-size: 2rem;
+}
+
+h2:hover .headerlink,
+dt:hover .headerlink{
+    display: initial;
+}
+
+p {
+    font-size: 1rem;
+}
+
+/* Layout */
+html, body {
+    height:100%;
+}
+
+main {
+    min-height:100%;
+}
+
+header .side-nav ul>li.current>a:first-child {
+    background: #eee;
+}
+
+header .side-nav ul>li.current.toctree-l2>a:first-child {
+    background: #424242;
+    color:white;
+}
+
+header .side-nav .toctree-l1 a {
+    padding-left: 20px;
+}
+
+header .side-nav .toctree-l2 a {
+    padding-left: 40px;
+}
+
+header .side-nav .toctree-l3 {
+    display: none
+}
+
+@media only screen and (min-width : 993px) {
+    main, footer {
+        margin-left: 300px;
+    }
+    .container {
+        width: 85%;
+    }
+}
+
+.document .section:first-child {
+    padding-top: 0px;
+    margin-top: 0px;
+}
+
+.document .section:first-child h1:first-child {
+    margin-top: 0px;
+    background: #424242; /*  grey darken-3 */
+    color: white;
+    font-weight: 100;
+    padding: 30px 0px 30px 0px;
+    white-space: nowrap;
+}
+
+footer.page-footer {
+    background-color: #424242; /*  grey darken-3 */
+    color: white;
+    padding: 10px 40px 10px 40px;
+}
+
+#table-of-contents {
+    display: none;
+}
