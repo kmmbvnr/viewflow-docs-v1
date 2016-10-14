@@ -32,7 +32,6 @@ Table of Contents
    :maxdepth: 2
    :titlesonly:
 
-   core_concepts
    viewflow_api
    material_forms
    material_admin

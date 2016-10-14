@@ -45,3 +45,6 @@ API
 
 .. autoclass:: material.base.Row
       :members:
+
+.. autoclass:: material.base.Fieldset
+      :members:

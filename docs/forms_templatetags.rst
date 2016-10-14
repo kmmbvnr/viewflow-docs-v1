@@ -5,13 +5,12 @@ Template Tags
 {% form %}
 ==========
 
-Renders material desing styled form.
+Renders the form.
 
 Options:
 
-
 * `form` - form instance to render, if not specified, takes from from `form` context variable
-* `layout` - form layout object, by default first from `layout` then `view.layout` context variable
+* `layout` - the layout object, by default takes first from `layout` then `view.layout` context variable
 * `template` - template to render a form, default 'material/form.html'
 
 
@@ -104,6 +103,6 @@ Widget specific attributes
 RadioSelect
 ~~~~~~~~~~~
 
-Render radio sleectin one line::
+Render radio options in one line::
   
     {% attr form.field 'group' class append %}inline{% endattr %}

@@ -52,7 +52,8 @@
             {%- endblock document %}
         </main>
         <footer class="page-footer">
-           {%- if show_copyright %}
+            <div class="right-align">
+            {%- if show_copyright %}
                 {%- if hasdoc('copyright') %}
                     {% trans path=pathto('copyright'), copyright=copyright|e %}&#169; <a href="{{ path }}">Copyright</a> {{ copyright }}.{% endtrans %}
                  {%- else %}
@@ -62,6 +63,7 @@
             {%- if last_updated %}
                  {% trans last_updated=last_updated|e %}Last updated on {{ last_updated }}.{% endtrans %}
            {%- endif %}
+            </div>
         </footer>
         <script type="text/javascript">
           $('#slide-out').perfectScrollbar();
