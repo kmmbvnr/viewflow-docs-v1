@@ -56,6 +56,21 @@ em {
     font-style: normal;
 }
 
+table.field-list th.field-name {
+    vertical-align: top;
+}
+
+table.field-list td.field-body {
+    padding-top: 0px;
+}
+
+dl.class dt {
+    font-size: 1.2rem;
+    padding: 5px;
+    padding-left: 0px;
+    font-family: monospace;
+}
+
 /* Layout */
 html, body {
     height:100%;

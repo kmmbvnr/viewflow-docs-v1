@@ -6,9 +6,9 @@ Introduction
 ============
 
 Django-Material offers the alternative approach to rendering forms in
-django. Strong python/HTML code separation keeps you form code DRY and
+django. Strong Python/HTML code separation keeps you form code DRY and
 free form underline HTML/CSS rendering details. Field rendering
-customization happens in a template, not in the code. Layout objects
+customization happens in a template, not in code. Layout objects
 allow setting the relative field placement and sizes.
 
 Build-in templates implements form rendering using `MaterializeCSS

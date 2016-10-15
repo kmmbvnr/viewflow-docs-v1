@@ -6,7 +6,7 @@ Introduction
 ============
 
 Viewflow is the workflow library based on BPMN concepts. BPMN -
-business process modeling and notations - is the wide adopted industry
+Business process modeling and notations - is the wide adopted industry
 standard for business process modeling. BPMN provides a standard
 notation readily understandable by all business stakeholders. Viewflow
 bridging the gap between picture and executable, ready to use web
@@ -16,14 +16,14 @@ application.
 .. image:: _static/ShipmentProcess.png
    :width: 400px
 
-After over than 10 years history of the BPMN standard, it contains
+After over than ten years history of the BPMN standard, it contains the
 whole set of battle-proven primitives for all occasions, helps you to
 describe all real life business process scenarios. Viewflow helps you
-to build a bpmn diagram in code and keep business logic separate from
+to build a BPMN diagram in code and keep business logic separate from
 django forms and views code.
 
-Viewflow suite contains 4 libraries, each one could be used
-independenply from others.
+Viewflow suite contains four libraries, and each one could be used
+independently from others.
 
 Table of Contents
 =================

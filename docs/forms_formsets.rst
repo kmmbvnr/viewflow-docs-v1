@@ -62,10 +62,10 @@ To use Formset and Inlines field you have to inherit from `material.forms.Form`:
 API
 ===
 
-.. autoclass:: material.forms.SuperForm
+.. autoclass:: material.forms.Form
       :members:
 
-.. autoclass:: material.forms.SuperModelForm
+.. autoclass:: material.forms.ModelForm
       :members:
 
 .. autoclass:: material.forms.FormField

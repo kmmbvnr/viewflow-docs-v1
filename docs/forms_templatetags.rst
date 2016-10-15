@@ -27,11 +27,11 @@ Example:
 {% part %}
 ==========
 
-`django-material` forms processing is built around simple concept
-called *part*. `part` is like django template block, it has a default
-value and could be overriden.  But `parts` are created dynamically for
-each form field, which allows you to redefine specific form field html
-render output.
+In the `django-material` forms processing build around simple the concept
+called `part`. `part` is like django template block, it has a default
+value and could be overridden.  But `parts` are created dynamically
+for each form field, which allows you to redefine particular form
+field HTML code.
 
 Here is the example of rendering form with but prefix email field with email icon.
 
@@ -45,9 +45,8 @@ Here is the example of rendering form with but prefix email field with email ico
         <button type="submit" name="_submit" class="btn">Submit</button>
     </form>
 
-There is a lot of other parts declared in default templates. See
-template code for details.  If your widget is so special, you can
-completly override its rendering 
+There are a lot of other parts declared in default templates. See
+template code for details. Even whole field rendering could be overridden.
 
 .. code-block:: html
 
@@ -58,7 +57,7 @@ List of common parts
 
 Each field template could have own parts available for redefinition.
 
-Here is the list of common parts, available in most of field templates::
+Here is the list of standard parts, available in most of the fields templates::
 
     {% part field prefix %}{% endpart %}
     {% part field control %}{% endpart %}
@@ -80,7 +79,7 @@ Number of columns to render checkboxes::
 ==========
 
 The tag allows to add or override specific attribute in the rendered
-html.
+HTML.
 
 Here are few examples.
 

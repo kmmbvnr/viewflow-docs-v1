@@ -22,29 +22,30 @@ Layout object is the way to specify relative fields placements and sizes.
                      'gender', 'desired_gender'),
                  Row('cost_price', Span2('wholesale_price'), 'retail_price')))
 
-SpanXX elements are not to material grid classes, but used to
+SpanXX elements are not bound to the material grid classes but used to
 determine relative fields width. Each row occupies 12 grid columns.
-Elements in Row('elem1', 'elem2') would be rendered in 6 grid coulmns
-each, and in Row(Span2('elem1'), 'elem2') `elem1` would be rendered in
-8 grid columns, and `elem2` in 4 grid columns.
-
-Layouts rendering itself is specified in template.
+Elements in Row('elem1', 'elem2') would be rendered in 6 grid columns
+each. In the `Row(Span2('elem1'), 'elem2')`, `elem1` would have eight grid
+columns and `elem2` four grid columns.
 
 
 API
 ===
 
-.. autoclass:: material.base.Layout
+.. autoclass:: material.Layout
       :members:
 
-.. autoclass:: material.base.Span
+.. autoclass:: material.Span
       :members:
 
-.. autoclass:: material.base.Column
+.. autoclass:: material.Column
       :members:
 
-.. autoclass:: material.base.Row
+.. autoclass:: material.Row
       :members:
 
-.. autoclass:: material.base.Fieldset
+.. autoclass:: material.Fieldset
       :members:
+
+.. autoclass:: material.LayoutMixin
+    :members:
