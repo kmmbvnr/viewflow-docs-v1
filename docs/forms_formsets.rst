@@ -4,18 +4,18 @@ Formsets and Inlines
 
 **PRO Only**
 
-Formsets and Inlines support is build on the idea from
+Formsets and Inlines support based on the idea from the
 `django-superform
 <https://github.com/gregmuellegger/django-superform>`_ project.
-Formset and Inlines are included an procceed as a normal django form
+Formsets and Inlines are included and proceed as a normal django form
 fields.
 
-This keeps your view code free from form-specific details and allows
-to use same templating technics from django-material form as for all
-rest fields.
+This approach keeps your view code free from form-specific details and
+allows to use same templating technics from django-material form as
+for all rest fields.
 
-Due inactivity, django-superforms code is absorbed into
-django-material and now supported as part of django-material Pro
+Due to inactivity of `django-superforms` project, code absorbed into
+`django-material` and now supported as part of django-material Pro
 distribution.
 
 Example:

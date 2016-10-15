@@ -4,8 +4,12 @@ Material Admin
 
 Django Administration interface redisigned to Google Material Design styles
 
-http://forms.viewflow.io/admin
+.. image:: _static/MaterialAdmin.png
+   :width: 800px
 
+
+Table of  Contents
+==================
 
 .. toctree::
    :maxdepth: 2
@@ -13,7 +17,3 @@ http://forms.viewflow.io/admin
    admin_quickstart
    admin_customization
    admin_unsupported
-
-
-.. image:: _static/MaterialAdmin.png
-   :width: 800px
