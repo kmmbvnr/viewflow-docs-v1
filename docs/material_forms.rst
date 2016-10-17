@@ -16,6 +16,7 @@ Build-in templates implements form rendering using `MaterializeCSS
 
 .. image:: _static/MaterialForm.png
    :width: 800px
+   :target: http://forms.viewflow.io/demo/registration/
 
 Installation
 ============

@@ -39,8 +39,9 @@
                 {%- endblock %}
             </ul>
         </header>
-        <div style="z-index:-1;background-color:#424242;height:109px;width:100%;position:absolute;top:0">&nbsp;</div>
+        <div style="z-index:-1;background-color:#424242;height:109px;width:100%;position:absolute;top:0">&nbsp;</div>        
         <main>
+            <a href="#" data-activates="slide-out" class="button-collapse hide-on-large-only" style="color:white;font-size:4rem;position:absolute"><i class="material-icons" style="font-size: 4rem;padding-top:25px;">menu</i></a>
             {%- block document %}
             <div class="document container">
                 <div class="row">
@@ -48,27 +49,45 @@
                         {% block body %} {% endblock %}
                     </div>
                     <div class="col s12 m2 l3" style="margin-top: 149px;padding-left:60px">
-                        <div id="pin"> </div>
+                        <div id="pin" class="hide-on-small-only"> </div>
                     </div>
                 </div>
             </div>
             {%- endblock document %}
         </main>
-        <footer class="page-footer">
-            <div class="right-align">
-            {%- if show_copyright %}
-                {%- if hasdoc('copyright') %}
-                    {% trans path=pathto('copyright'), copyright=copyright|e %}&#169; <a href="{{ path }}">Copyright</a> {{ copyright }}.{% endtrans %}
-                 {%- else %}
-                     {% trans copyright=copyright|e %}&#169; Copyright {{ copyright }}.{% endtrans %}
-                 {%- endif %}
-            {%- endif %}
-            {%- if last_updated %}
-                 {% trans last_updated=last_updated|e %}Last updated on {{ last_updated }}.{% endtrans %}
-           {%- endif %}
+        <footer class="page-footer grey darken-1">
+            <div class="container">
+                <div class="row">
+                    <div class="col l4 s12">
+                        <h5 class="white-text">Django Viewflow</h5><p class="grey-text text-lighten-4">Reusable workflow library for business process automation with python and BPMN</p>
+                        <a target="_blank" href="https://github.com/viewflow/"><i class="zmdi zmdi-github zmdi-hc-2x white-text"></i></a>&nbsp;&nbsp;&nbsp;
+                        <a target="_blank" href="https://twitter.com/viewflow"><i class="zmdi zmdi-twitter zmdi-hc-2x white-text"></i></a>
+                    </div>
+                    <div class="col l4 offset-l4 s13">
+                        <div id="mc_embed_signup">
+                            <form action="https://viewflow.us8.list-manage.com/subscribe/post?u=840815b5d579f45277f0764f0&amp;id=d267f3adcb" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate="novalidate">
+                                <div id="mc_embed_signup_scroll">
+	                                <h5 class="white-text">Subscribe to our mailing list</h5>
+                                    <div class="mc-field-group input-field">
+	                                    <label for="mce-EMAIL" class="white-text">Email Address </label>
+	                                    <input type="email" class="white-text" value="" name="EMAIL" id="mce-EMAIL">
+                                    </div>
+	                                <div id="mce-responses" class="clear">
+		                                <div class="response white-text" id="mce-error-response" style="display:none"></div>
+		                                <div class="response  white-text" id="mce-success-response" style="display:none"></div>
+	                                </div>
+                                    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                                    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_840815b5d579f45277f0764f0_d267f3adcb" tabindex="-1" value=""></div>
+                                    <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button btn white black-text ">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </footer>
+        </footer>        
         <script type="text/javascript">
+          $(".button-collapse").sideNav();
           $('#slide-out').perfectScrollbar();
           $('#pin').pushpin({top: 149, offset: 40});
 
@@ -81,13 +100,15 @@
           });
 
           if(classListLinks) {
+            $('#pin span').remove();
+            $('#pin ul').remove();
             $('#pin').append(
               '<span style="padding-left:10px">API</span>' + 
               '<ul class="section table-of-contents" style="margin-top:0px;">' +
               classListLinks +
               ' </ul>'
             );
-          }
+          }          
         </script>
     </body>
 </html>
