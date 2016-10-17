@@ -63,25 +63,13 @@ API
 ===
 
 .. autoclass:: material.forms.Form
-      :members:
 
 .. autoclass:: material.forms.ModelForm
-      :members:
 
 .. autoclass:: material.forms.FormField
-      :members:
 
 .. autoclass:: material.forms.ModelFormField
-      :members:
-
-.. autoclass:: material.forms.ForeignKeyFormField
-      :members:
 
 .. autoclass:: material.forms.FormSetField
-      :members:
-
-.. autoclass:: material.forms.ModelFormSetField
-      :members:
 
 .. autoclass:: material.forms.InlineFormSetField
-      :members:

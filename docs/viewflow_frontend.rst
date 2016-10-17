@@ -2,10 +2,10 @@
 Viewflow Frontend
 =================
 
-Material designed frontend module for the Viewflow PRO
+Introduction
+============
 
-.. image:: _static/ViewflowFrontend.png
-   :width: 800px
+Reference UI implementation for the Viewflow Workflow library.
 
 
 Installation
@@ -40,13 +40,22 @@ Add frontend urls into global urlconf module at urls.py
         url(r'', include(frontend_urls)),
     ]
 
+
+Quick start
+===========
+
 In the flows.py file, register a flow in the frontend
 
 .. code-block:: python
 
     from viewflow import frontend
 
+    @frontend.register
     class MyFlow(Flow):
         ...
 
-    frontend.register(MyFlow)
+
+Examples
+========
+
+The live demo of the frontend is available at http://demo.viewflow.io/

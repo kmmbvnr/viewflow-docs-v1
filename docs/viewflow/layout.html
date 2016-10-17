@@ -21,7 +21,7 @@
           Turbolinks.start();
         </script>
         <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+        <script type="text/javascript" src="_static/materialize.js"></script>
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.perfect-scrollbar/0.6.12/js/perfect-scrollbar.jquery.min.js"></script>
     </head>
     <body>
@@ -47,6 +47,9 @@
                     <div class="col s12 m10 l9">
                         {% block body %} {% endblock %}
                     </div>
+                    <div class="col s12 m2 l3" style="margin-top: 149px;padding-left:60px">
+                        <div id="pin"> </div>
+                    </div>
                 </div>
             </div>
             {%- endblock document %}
@@ -67,6 +70,24 @@
         </footer>
         <script type="text/javascript">
           $('#slide-out').perfectScrollbar();
+          $('#pin').pushpin({top: 149, offset: 40});
+
+          var classListLinks = "";
+
+          $('dl.class>dt').each(function() {
+            var classID = $(this).attr('id');
+            var className = classID.split('.').pop();
+            classListLinks += '<li><a href="#' + classID + '">' + className + '</a></li>';
+          });
+
+          if(classListLinks) {
+            $('#pin').append(
+              '<span style="padding-left:10px">API</span>' + 
+              '<ul class="section table-of-contents" style="margin-top:0px;">' +
+              classListLinks +
+              ' </ul>'
+            );
+          }
         </script>
     </body>
 </html>

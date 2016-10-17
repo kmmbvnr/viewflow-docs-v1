@@ -23,3 +23,6 @@ API
 .. autoclass:: material.frontend.views.DetailModelView
       :members:
 
+.. autoclass:: material.frontend.views.ListModelView
+      :members:
+
