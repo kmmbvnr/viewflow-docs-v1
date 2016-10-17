@@ -43,10 +43,10 @@ Ensure that `django.template.context_processors.request` in your template contex
         },
     ]
 
-Examples
-========
+Demo
+====
 
-The live demo of the frontend is available at http://forms.viewflow.io/admin
+The live demo of the admin is available at http://forms.viewflow.io/admin
 
 
 License

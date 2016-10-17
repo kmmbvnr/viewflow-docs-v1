@@ -8,10 +8,10 @@ Introduction
 Django-Material offers the alternative approach to rendering forms in
 django. Strong Python/HTML code separation keeps you form code DRY and
 free form underline HTML/CSS rendering details. Field rendering
-customization happens in a template, not in code. Layout objects
+customization happens in a template, not in the code. Layout objects
 allow setting the relative field placement and sizes.
 
-Build-in templates implements form rendering using `MaterializeCSS
+Forms are rendered in templates with `MaterializeCSS
 <http://materializecss.com>`_ framework
 
 .. image:: _static/MaterialForm.png
@@ -65,7 +65,7 @@ And render your form with {% form %} template tag
 Examples
 ========
 
-Set of samples with live demo and source code available at http://forms.viewflow.io#forms
+Set of samples with live demo and source code are available at http://forms.viewflow.io#forms
 
 
 License

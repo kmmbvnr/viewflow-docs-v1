@@ -39,10 +39,6 @@ Unsupported admin options
 
 - Option is ignored, inlines always have zero forms
 
-.. attribute:: InlineModelAdmin.template
-
-- Option is ignored
-
 .. attribute:: AdminSite.site_header
 
 - Option is ignored, material admin have no site header.
