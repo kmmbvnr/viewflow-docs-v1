@@ -52,8 +52,8 @@ template code for details. Even whole field rendering could be overridden.
 
     {% part form.my_field %}any html code here{% endpart %}
 
-List of common parts
---------------------
+List of standard parts
+----------------------
 
 Each field template could have own parts available for redefinition.
 

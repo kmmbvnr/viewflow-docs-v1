@@ -12,7 +12,7 @@ allows to build big modular websites.
 - Ready to use theme build with ``MaterialzeCSS``
 - Autocollected site navigation menu
 - Fast and smooth navigation with PJAX
-- CRUD scatfolding build with django class based views
+- CRUD scatffolding build with django class based views
 - Out of the box datatables integration.
 
  
@@ -44,7 +44,7 @@ Add frontend urls into global urlconf module at urls.py
 Quick start
 ===========
 
-To create a new module add `ModuleMixin` to your `AppConfig` definision in `apps.py`
+To create a new module add `ModuleMixin` to your `AppConfig` definition in `apps.py`
 
 .. code-block:: python
 
@@ -87,7 +87,7 @@ Demo source code available at the `Github <https://github.com/viewflow/django-ma
 License
 =======
 
-Material Frontend is distrubuted as part of `django-material` package under the terms of the `BSD3 license <https://github.com/viewflow/django-material/blob/master/LICENSE.txt>`_
+Material Frontend is distributed as part of `django-material` package under the terms of the `BSD3 license <https://github.com/viewflow/django-material/blob/master/LICENSE.txt>`_
 
   
 Table of Contents

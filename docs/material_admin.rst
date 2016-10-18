@@ -5,7 +5,7 @@ Material Admin
 Introduction
 ============
 
-Django Administration interface redisigned to Google Material Design styles
+Django Administration interface redesigned to Google Material Design styles
 
 Installation
 ============
@@ -14,7 +14,7 @@ django-material tested with Python 2.7/3.4/3.5, django 1.8/1.9::
 
     pip install django-material
 
-And add it into INSTALLED_APPS settings
+And add it to INSTALLED_APPS settings
 
 .. code-block:: python
 
@@ -52,7 +52,7 @@ The live demo of the admin is available at http://forms.viewflow.io/admin
 License
 =======
 
-Material Admin is distrubuted as part of `django-material` package under the terms of the `BSD3 license <https://github.com/viewflow/django-material/blob/master/LICENSE.txt>`_
+Material Admin is distributed as part of `django-material` package under the terms of the `BSD3 license <https://github.com/viewflow/django-material/blob/master/LICENSE.txt>`_
 
 
 Table of  Contents

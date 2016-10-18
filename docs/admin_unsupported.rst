@@ -14,35 +14,35 @@ Unsupported admin options
 .. attribute:: ModelAdmin.filter_horizontal
 .. attribute:: ModelAdmin.filter_vertical
 
-- No difference between options. If there is enought width, the
-  horizontal layout is used. Vertical layout with the box of unselected
-  options appearing above the box of selected options used on the small
-  screens.
+- No difference between options. If there is enough width, the
+  horizontal layout used. Vertical layout with the box of unselected
+  options appearing above the box of selected options used on the
+  small screens.
 
 .. attribute:: ModelAdmin.list_editable
 
-- No support for editable lists is implemented
+- Not implemented
 
 .. attribute:: ModelAdmin.list_max_show_all
 
-- Not implemeted
+- Not implemented
 
 .. attribute:: ModelAdmin.preserve_filters
 
-- No support for preserve filters is implemented.
+- Not implemented
 
 .. attribute:: ModelAdmin.save_on_top
 
-- Not implemeted
+- Not implemented
                
 .. attribute:: InlineModelAdmin.min_num
 
-- Option is ignored, inlines always have zero forms
+- Option ignored, in lines always have zero forms
 
-.. attribute:: AdminSite.site_header
+.. attribute:: Admin Site.site_header
 
-- Option is ignored, material admin have no site header.
+- Option ignored, material admin have no site header.
 
-.. attribute:: AdminSite.index_title
+.. attribute:: Admin Site.index_title
 
-- Option is ignored
+- Option ignored

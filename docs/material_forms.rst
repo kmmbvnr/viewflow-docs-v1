@@ -5,13 +5,14 @@ Material Forms
 Introduction
 ============
 
-Django-Material offers the alternative approach to rendering forms in
-django. Strong Python/HTML code separation keeps you form code DRY and
-free form underline HTML/CSS rendering details. Field rendering
-customization happens in a template, not in the code. Layout objects
-allow setting the relative field placement and sizes.
 
-Forms are rendered in templates with `MaterializeCSS
+Django-Material offers the alternative approach to rendering forms in
+django. Strong Python/HTML code separation keeps you code DRY and free
+from underline HTML/CSS rendering details. Field rendering
+customization happens in a template, not in code. Layouts allow
+setting relative location and size of fields.
+
+Forms are rendered  with `MaterializeCSS
 <http://materializecss.com>`_ framework
 
 .. image:: _static/MaterialForm.png
@@ -25,7 +26,7 @@ django-material tested with Python 2.7/3.4/3.5, django 1.8/1.9/1.10::
 
     pip install django-material
 
-And add it into INSTALLED_APPS settings
+Add it into INSTALLED_APPS settings
 
 .. code-block:: python
 
@@ -73,7 +74,7 @@ License
 
 Django Material is an Open Source project licensed under the terms of the `BSD3 license <https://github.com/viewflow/django-material/blob/master/LICENSE.txt>`_
 
-Django Material Pro has a commercial-friendly license and distributed as part of Viewflow Pro
+Django Material Pro has a commercial-friendly license and is distributed as part of Viewflow Pro
 
 
 Table of  Contents

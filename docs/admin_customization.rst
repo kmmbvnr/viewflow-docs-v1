@@ -7,7 +7,7 @@ Application icon
 ================
 
 ``Material Admin`` takes application icons same as ``Material
-Frontend`` from `.icon` attribute of application config.
+Frontend`` from an `.icon` attribute of application config.
 
 
 <app>/apps.py::
@@ -22,7 +22,7 @@ Frontend`` from `.icon` attribute of application config.
 Model icon
 ==========
 
-Model Icons are taken from `.icon` attribute of model Admin.
+Model Icons are taken from an `.icon` attribute of model Admin.
 
 <app>/models.py::
   
@@ -35,12 +35,12 @@ Model Icons are taken from `.icon` attribute of model Admin.
 3d party app icons
 ==================
 
-3d party application icons could be overriden by custom CSS style.
+3d party application icons could be overridden by custom CSS style.
 
 - Each app icon has the class `admin-appicon-<app_label>`.
 - Each model icon has the class - `admin-modelicon-<app_label>-<model_label>`.
 
-You can put custom css directly to the `admin/base_site.html` tempate::
+You can put custom css directly to the `admin/base_site.html` template::
 
   {% extends "admin/base.html" %}
 
