@@ -11,7 +11,7 @@ allows to build big modular websites.
 - Lightweight module extension of django application config
 - Ready to use theme build with ``MaterialzeCSS``
 - Autocollected site navigation menu
-- Fast and smooth navigation with PJAX
+- Fast and smooth navigation with Turbolinks
 - CRUD scatffolding build with django class based views
 - Out of the box datatables integration.
 

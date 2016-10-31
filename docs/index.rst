@@ -25,6 +25,27 @@ from django forms and views code.
 Viewflow suite contains four libraries, and each one could be used
 independently from others.
 
+3d party documentation
+======================
+
+You may also interest in the documentation of underline components
+of the Viewflow and Django-Material
+
+- `Django - The web framework for perfectionist with deadlines <https://docs.djangoproject.com/>`_
+- `Materialize - The modern responsive front-end framework based on Material Design <http://materializecss.com/>`_
+- `Turbolinks - The simple library makes navigating your web application faster <https://github.com/turbolinks/turbolinks>`_
+- `Datatables - Advanced interaction controls for any HTML table <https://datatables.net/>`_
+
+Read more about BPMN and Workflow
+
+- `Workflow Patterns <http://www.workflowpatterns.com/>`_
+- `Business Process Model and Notation <https://en.wikipedia.org/wiki/Business_Process_Model_and_Notation>`_
+
+Introduction articles
+
+- `state machine != workflow engine <https://jmettraux.wordpress.com/2009/07/03/state-machine-workflow-engine/>`_
+- `What Is a BPMN Process (And What Is Not) <http://mainthing.ru/item/715/>`_
+
 Table of Contents
 =================
 
