@@ -28,10 +28,12 @@ independently from others.
 3d party documentation
 ======================
 
-You may also interest in the documentation of underline components
+You may also interest in the documentation for underline components
 of the Viewflow and Django-Material
 
 - `Django - The web framework for perfectionist with deadlines <https://docs.djangoproject.com/>`_
+- `Django Filters - reusable application  allows users to filter down a queryset <https://django-filter.readthedocs.io/en/latest/>`_
+- `Django Rest Framework - powerful and flexible toolkit for building Web APIs. <http://django-rest-framework.org>`_ 
 - `Materialize - The modern responsive front-end framework based on Material Design <http://materializecss.com/>`_
 - `Turbolinks - The simple library makes navigating your web application faster <https://github.com/turbolinks/turbolinks>`_
 - `Datatables - Advanced interaction controls for any HTML table <https://datatables.net/>`_

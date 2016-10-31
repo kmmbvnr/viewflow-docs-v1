@@ -98,3 +98,4 @@ Table of Contents
 
    frontend_modules
    frontend_crud
+   frontend_customization
