@@ -44,15 +44,21 @@ Add frontend urls into global urlconf module at urls.py
 Quick start
 ===========
 
-To create a new module add `ModuleMixin` to your `AppConfig` definition in `apps.py`
+If you are creating new django app, you can use `./manage.py
+startmodule <app_name>` command.
+
+The command is pretty similar to the `./manage.py startapp`, but it
+scaffolds all files required for a `material.frontend` module.
+
+To manually create a new module add `ModuleMixin` to the `AppConfig` definition in the `apps.py` file
 
 .. code-block:: python
 
     from material.frontend.apps import ModuleMixin
 
-    class Sales(ModuleMixin, AppConfig):
-        name = 'sales'
-        icon = '<i class="mdi-communication-quick-contacts-dialer"></i>'
+    class MyAppConfig(ModuleMixin, AppConfig):
+        name = 'myapp'
+        icon = '<i class="material-icons">flight_takeoff</i>'
 
 The application have to have <app_module>/urls.py file, with
 a single no-parametrized url with name='index', ex
@@ -75,6 +81,9 @@ The menu.html sample
             <li><a href="{% url 'sales:customers' %}">Customers</a></li>
             {% if perms.sales.can_add_lead %}<li><a href="{% url 'sales:leads' %}">Leads</a></li>{% endif %}
         </ul>
+
+Next, you need to add `myapp.apps.MyAppConfig` to the `INSTALLED_APPS`
+setting and run `./manange.py migrate` to get module entry created.
 
 
 Examples
