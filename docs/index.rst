@@ -1,6 +1,6 @@
-========
-Viewflow
-========
+=============
+Documentation
+=============
 
 Introduction
 ============
