@@ -178,3 +178,11 @@ footer.page-footer {
 #table-of-contents {
     display: none;
 }
+
+/* Page elements */
+span.theme {
+    font-size: 2em;
+    line-height: 2.2em;
+    padding: 10px;
+    margin: 5px;
+}
