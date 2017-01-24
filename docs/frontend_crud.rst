@@ -51,12 +51,18 @@ API
 .. autoclass:: material.frontend.views.DetailModelView
       :members:
 
+.. autoclass:: material.frontend.views.list.DataTableMixin
+      :members:
+
+.. autoclass:: material.frontend.views.list.FilterMixin
+      :members:
+
 .. autoclass:: material.frontend.views.ListModelView
       :members:
 
-.. autoclass:: material.frontend.actions.BaseActionView
+.. autoclass:: material.frontend.views.actions.BaseActionView
       :members:
 
-.. autoclass:: material.frontend.actions.DeleteActionView
+.. autoclass:: material.frontend.views.actions.DeleteActionView
       :members:
 

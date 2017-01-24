@@ -75,7 +75,7 @@ Include additional items on the side bar::
    {% endblock %}
 
 {% block topbar_links %}
----------------------
+------------------------
 
 Additional links on the top bar::
 
@@ -91,4 +91,3 @@ Additional links on the top bar::
     </ul>
     {{ block.super }}
     {% endblock %}
-
