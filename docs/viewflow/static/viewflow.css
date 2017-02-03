@@ -51,13 +51,18 @@ p {
     font-size: 1rem;
 }
 
+ul.simple {
+    padding-left: 20px;
+}
+
 ul.simple li {
+    list-style-type: circle;
     padding-left: 20px;
     padding-bottom: 10px;
 }
 
 cite {
-    padding: 4px;
+    padding: 0px;
     font-family: monospace;
     font-style: normal;
     color: #4070a0;
