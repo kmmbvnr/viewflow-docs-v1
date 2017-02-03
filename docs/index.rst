@@ -55,12 +55,15 @@ Table of Contents
    :maxdepth: 2
    :titlesonly:
 
-   viewflow_api
+   viewflow_quickstart
+   viewflow_core
+   viewflow_flow
+   viewflow_rest
+   viewflow_frontend
    material_forms
    material_admin
    material_frontend
-   viewflow_frontend
-
+   thirdparty_packages
 
 
 License 
@@ -81,4 +84,4 @@ for more details.
 Copyright
 =========
 
-2016 Mikhail Podgurskiy <kmmbvnr@gmail.com>
+2017 Mikhail Podgurskiy <kmmbvnr@gmail.com>

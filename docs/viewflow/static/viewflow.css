@@ -124,8 +124,8 @@ header .side-nav .toctree-l2 a {
     padding-left: 60px;
 }
 
-header .side-nav .toctree-l3 {
-    display: none
+header .side-nav .toctree-l3 a {
+    padding-left: 80px;
 }
 
 @media only screen and (min-width : 993px) {
