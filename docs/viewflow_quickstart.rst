@@ -2,12 +2,12 @@
 Quck start
 ==========
 
-In this tutorial, we will work on basic Hello World application where
-one person starts "Hello, world" request, another one approves it, as
-soon as the application is approved it will be sent.
+This tutorial, shows how to create basic Hello World application where
+one person starts "Hello, world" request, another one approves it, and
+when approved the request sent out.
 
-To follow this tutorial, you need to have python 3.4+ installed. To run viewflow with python 2.7,
-you need to have PRO licence.
+To follow the tutorial, you need to have python 3.4+ installed. To run
+viewflow with python 2.7, you need to have PRO licence.
 
 
 Initial steps
@@ -140,7 +140,7 @@ Open the `demo/helloworld/flows.py` file and define:
         )
 
         check_approve = (
-            flow.If(cond=lambda activation: activation.process.approved)
+            flow.If(lambda activation: activation.process.approved)
             .Then(this.send)
             .Else(this.end)
         )

@@ -22,8 +22,8 @@ to describe all real life business process scenarios. Viewflow assists
 you in building a BPMN diagram in code and keep business logic separate
 from django forms and views code.
 
-Viewflow suite contains four libraries, and each one could be used
-independently from others.
+Viewflow suite has a modular design, and you can use viewflow core
+libary itself, or accompanied with pre-built UI frontend.
 
 3d party documentation
 ======================

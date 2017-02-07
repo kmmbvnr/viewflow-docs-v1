@@ -87,6 +87,15 @@ dl.class dt {
     font-family: monospace;
 }
 
+dl.class > dt {
+    background: #f1f1f1;
+    padding: 5px;
+}
+
+dl.class > dt:target {
+    background: #bfbfbf;
+}
+
 dl.class dl.docutils dt {
     font-size: 1rem;
 }
@@ -168,10 +177,6 @@ header .side-nav .toctree-l3 a {
 
 .table-of-contents a:hover {
     border-left: none;
-}
-
-dt:target {
-    background: lightyellow;
 }
 
 footer.page-footer {
