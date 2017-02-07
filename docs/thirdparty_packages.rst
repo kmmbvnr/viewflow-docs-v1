@@ -9,4 +9,5 @@ Table of Contents
    :maxdepth: 2
    :titlesonly:
 
+   thirdparty_packages_celery
    thirdparty_packages_redis
