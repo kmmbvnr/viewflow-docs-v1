@@ -2,12 +2,12 @@
 Quck start
 ==========
 
-This tutorial, shows how to create basic Hello World application where
+This tutorial shows how to create basic Hello World application where
 one person starts "Hello, world" request, another one approves it, and
 when approved the request sent out.
 
-To follow the tutorial, you need to have python 3.4+ installed. To run
-viewflow with python 2.7, you need to have PRO licence.
+To follow the tutorial, you need to have Python 3.4+ installed. To run
+viewflow with Python 2.7, you need to have PRO license.
 
 
 Initial steps
@@ -102,7 +102,7 @@ to capture process state during execution.
 Define flow
 ===========
 
-Let's take a look to the flow BPMN diagram. We going to map each shape
+Let's take a look at the flow BPMN diagram. We going to map each shape
 to the corresponding flow node definition.
 
 .. image:: _static/HelloWorld.png
@@ -160,7 +160,8 @@ Viewflow proceeds all applications flows from the `flows.py` file.
 
 - Each flow is a Python class that subclasses `viwflow.base.Flow`
 - Each attribute represents a flow task
-- To connect flow task altogether the special `this` object can be used to make forward references
+- To connect flow task altogether, the special `this` object can be
+  used to make forward references
 
 `flow.Start` represents a task that performed by a person in a django
 view. For the tutorial purpose, we use built-in
@@ -182,7 +183,7 @@ administrative actions views.
 
 `flow.If` is the simple exclusive gateway. It selects an outcome
 depends on a callable result. For the input, callable gets a task
-`activation` - an object that handle current task processing logic,
+`activation` - an object that handles current task processing logic,
 and that have a `activation.process` and `activation.task` fields
 initialized with corresponding model instances.
 
@@ -198,8 +199,8 @@ Enable frontend
 ===============
 
 Here we can start to write a lot of templates for flow list, actions,
-task details and tast execution views. Viewflow comes with prebuild
-frontend module, that provide ready to use UI, let's just enable it.
+task details and task execution views. Viewflow comes with prebuild
+frontend module, which provides ready to use UI, let's just enable it.
 
 First, adds the required apps to the `INSTALLED_APPS`
 
@@ -214,7 +215,7 @@ First, adds the required apps to the `INSTALLED_APPS`
         'demo.helloworld',
     ]
 
-Add frontend urls into global urlconf module at `demo/urls.py`
+Add frontend URLs into global URL conf module at `demo/urls.py`
 
 .. code-block:: python
 

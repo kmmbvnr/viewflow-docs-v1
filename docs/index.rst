@@ -16,14 +16,14 @@ application.
 .. image:: _static/ShipmentProcess.png
    :width: 400px
 
-After more than ten years history of the BPMN standard, it contains a
-whole set of battle-proven primitives for all occasions and helps you
-to describe all real life business process scenarios. Viewflow assists
-you in building a BPMN diagram in code and keep business logic separate
-from django forms and views code.
+After more than ten years history of the BPMN standard, it contains
+the whole set of battle-proven primitives for all occasions and helps
+you to describe all real life business process scenarios. Viewflow
+assists you in building a BPMN diagram in code and keep business logic
+separate from django forms and views code.
 
 Viewflow suite has a modular design, and you can use viewflow core
-libary itself, or accompanied with pre-built UI frontend.
+library itself, or accompanied with pre-built UI frontend.
 
 3d party documentation
 ======================
@@ -32,8 +32,8 @@ You may also interest in the documentation for underline components
 of the Viewflow and Django-Material
 
 - `Django - The web framework for perfectionist with deadlines <https://docs.djangoproject.com/>`_
-- `Django Filters - reusable application  allows users to filter down a queryset <https://django-filter.readthedocs.io/en/latest/>`_
-- `Django Rest Framework - powerful and flexible toolkit for building Web APIs. <http://django-rest-framework.org>`_ 
+- `Django Filters - reusable application allows users to filter down a queryset <https://django-filter.readthedocs.io/en/latest/>`_
+- `Django Rest Framework - the powerful and flexible toolkit for building Web APIs. <http://django-rest-framework.org>`_ 
 - `Materialize - The modern responsive front-end framework based on Material Design <http://materializecss.com/>`_
 - `Turbolinks - The simple library makes navigating your web application faster <https://github.com/turbolinks/turbolinks>`_
 - `Datatables - Advanced interaction controls for any HTML table <https://datatables.net/>`_

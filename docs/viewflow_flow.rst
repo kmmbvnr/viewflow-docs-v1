@@ -5,13 +5,14 @@ Viewflow Flow
 `viewflow.flow` package provides a flow implementation for the standard
 django views/templates application.
 
-The package contains no templates. Only basic functionality provided
+The package contains no templates. The only basic functionality provided
 by list and action views.
 
 Use `viewflow.flow` if you would like to write own viewflow UI, based
 on django templates.
 
-:doc:`viewflow_frontend` is the redy to use, reference UI implementation for the `viewflow.flow`
+:doc:`viewflow_frontend` is the ready to use, reference UI
+     implementation for the `viewflow.flow`
 
 
 Table of Contents

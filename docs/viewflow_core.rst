@@ -5,19 +5,20 @@ Core concepts
 Flow
 ====
 
-Viewflow adds the addional layer to the standard djagno Model-View-Template trio.
+Viewflow adds the additional layer to the standard Django
+Model-View-Template trio.
 
-The :doc:`viewflow_core_flow` Layer is responsible to manage inner-task dependencies,
-allows extract flow logic out of View, leave in them only CRUD
-functionality.
+The :doc:`viewflow_core_flow` Layer is responsible for managing
+inner-task dependencies, allows extract flow logic out of View, leave
+in them only CRUD functionality.
 
 .. image:: _static/ViewflowCore.png
    :class: responsive-img
 
-Each :doc:`attribute <viewflow_core_node>` of the flow represents a flow task or gateway. Task
-could be a human action, syncronoius or asynchronius python job or
-even handler. Gateway is a non-interactive node that decide what tasks
-should be activated next.
+Each :doc:`attribute <viewflow_core_node>` of the flow represents a
+flow task or gateway. A task could be a human action, synchronous or
+asynchronous Python job or even handler. Gateway is a non-interactive
+node that decides what tasks should be activated next.
 
 To connect flow task altogether the special :doc:`this
 <viewflow_core_this>` object can be used to make references
@@ -45,13 +46,13 @@ to flow nodes or flow methods before they declared.
             retun activation.process.completed
         
 At runtime each node represented as a task :doc:`activation
-<viewflow_core_activation>` instance. Activation instance are
+<viewflow_core_activation>` instance. Activation instance is
 responsible for precondition check, task and process state transition
 management, and next tasks instantiation. Each flow node could have
 own activation implementation, with any interface as you like. All
-build-in activations are very similar, ex, you can expect that all
+built-in activations are very similar, ex, you can expect that all
 activations have methods `.cancel()`, `.undo()`, that cancels an
-active task, and revert completed respectivly.
+active task, and revert completed respectively.
 
 
 .. code-block:: python
@@ -80,10 +81,10 @@ managed by tasks activation classes
 Locking
 =======
 
-To avoid concurent flow updates viewflow can use short-time
-pessimistic :doc:`locking <viewflow_core_locking>` on a process
-instance. Entire view and handler's code is exucuted under lock. For
-the background jobs, lock asqured only at the start and at the end of
+To avoid concurrent flow updates viewflow can use short-time
+pessimistic :doc:`locking <viewflow_core_locks>` on a process
+instance. Entire view and handler's code is executed under lock. For
+the background jobs, lock acquired only at the start and at the end of
 a job.
 
 Locking is not enabled by default. You need to choose proper lock
@@ -99,19 +100,19 @@ implementation and enable it.
 Views
 =====
 
-Viewflow core is independed from a specific view implementation. With
-viewflow you can use as class-based views as functional based
+Viewflow core is independent of a particular view implementation. With
+viewflow, you can use as class-based views as functional based
 views. :doc:`viewflow.flow <viewflow_flow>` package provides standard
 django template based views, :doc:`viewflow.rest <viewflow_rest>` is
 the reference rest implementation.
 
 Each viewflow view expects to get `flow_task` and `flow_class` from
-the url confing. Task views also expects that `process_pk` and
-`task_pk` are present in the url.
+the URL config. Task views also expect that `process_pk` and `task_pk`
+are present in the URL.
 
-To get an a activation in a view, you can use one of :doc:`decorators
-<viewflow_core_decorators>` shortcuts that would proceed url
-parameters, set the lock and instantiate process, task and activation
+To get an activation in a view, you can use one of :doc:`decorators
+<viewflow_core_decorators>` shortcuts that would proceed URL
+parameters set the lock and instantiate process, task, and activation
 instances.
 
 .. image:: _static/ViewflowView.png
@@ -121,11 +122,11 @@ instances.
 URLs
 ====
 
-`Flow.urls` contains all views and task actions urls and can be used
-directly in the url config. `viewflow.flow.viewset.FlowViewset` and
-`viewflow.rest.viewt.FlowViewset` builds a url config that contains
-list views (ex: inbox) in addition. If you use the viewflow frontend,
-no specific url configuration is required.
+`Flow.urls` contains all views and task actions URLs and can be used
+directly in the URL config. `viewflow.flow.viewset.FlowViewset` and
+`viewflow.rest.viewt.FlowViewset` builds a URL config that contains
+list views (ex: inbox) besides. If you use the viewflow frontend, no
+specific URL configuration is required.
 
 .. code-block:: python
 
@@ -143,7 +144,7 @@ or, with build-in list views:
         url(r'^sampleflow/', FlowViewSet(SampleFlow).urls)
     ]
 
-or, in case of viewflow frontend
+or, in the case of viewflow frontend
 
 .. code-block:: python
 
@@ -153,18 +154,18 @@ or, in case of viewflow frontend
         url(r'', include(frontend_urls)),
     ]
 
-Error handing
-=============
+Error handling
+==============
 
-Viewflow provides two different strategies for an :doc:`error
-handing <viewflow_core_exceptions>`. For view tasks any exception
-in subsequent task activation would rollback the whole transaction,
-and view task will be available for end user again, for the case if
-they can change input data to pass.For the jobs, jobs result committed
-as soon as job ends. If error happens in subsequent task, subsequent
-task will be saved in error state and available for administrator for
-further processing in django admin. Error handling strategy could be
-customized in activation class.
+Viewflow provides two different strategies for an :doc:`error handling
+<viewflow_core_exceptions>`. For view tasks, any exception in
+subsequent task activation would rollback the whole transaction, and
+view task will be available for end user again, for the case if they
+can change input data to pass.For the jobs, jobs result committed as
+soon as job ends. If an error happens in a subsequent task, the
+subsequent task will be saved in error state and available for an
+administrator for further processing in django admin. Error handling
+strategy could be customized in activation class.
 
 .. image:: _static/ViewflowError.png
    :class: responsive-img
@@ -173,9 +174,10 @@ Flow migration
 ==============
 
 Viewflow keeps only task names in the database. No action required to
-add new task or change task connections.
+add a new task or change task connections.
 
-To rename the task, you can create a django data migration, with simple SQL Update statement
+To rename a task, you can create a django data migration, with simple
+SQL Update statement
 
 .. code-block:: python
     
@@ -184,11 +186,12 @@ To rename the task, you can create a django data migration, with simple SQL Upda
         WHERE flow_task='helloworld/flows.MyFlow.old_name'
     """)
 
-If you would like to delete a task from flow definition, but leave
-database without changes, you can add a special :class:`Obsolete <viewflow.flow.obsolete.Obsolete>` node to
-your flow.  Obsolete node will provide a view to see the historical
-task state, and ability to admins to cancel active obsolete tasks. No
-database content changes is also required.
+If you would like to delete a task from flow definition but leave
+database without changes, you can add a special :class:`Obsolete
+<viewflow.flow.obsolete.Obsolete>` node to your flow. An Obsolete node
+will provide a view to seeing the historical task state, and ability
+to admins to cancel active obsolete tasks. No further database content
+changes are required.
 
 .. code-block:: python
 
@@ -202,10 +205,10 @@ Viewflow frontend
 =================
 
 Viewflow frontend speeds up flow UI development as quickly as django
-admin does for the CRUD. Frontend provide ready you use html/css theme
-based on material design, and flow list and action views. In order to
-start using it, you need only :doc:`turn it on <viewflow_frontend>`
-and register a flow.
+admin does for the CRUD. Frontend provide ready you use HTML/CSS theme
+based on material design, and flow list and action views. To start
+using it, you need only :doc:`turn it on <viewflow_frontend>` and
+register a flow.
 
 .. code-block:: python
 
@@ -219,9 +222,9 @@ and register a flow.
 Further Options
 ===============
 
-Any web project with viewflow library, is still the django project,
-you can use any `reusable app <http://djangopackages.com>`_ available
-for the django web framework or any `Python Library
+Any web project with viewflow library is still the django project, you
+can use any `reusable app <http://djangopackages.com>`_ available for
+the django web framework or any `Python Library
 <https://github.com/vinta/awesome-python>`_
 
 .. image:: _static/Pony.png
