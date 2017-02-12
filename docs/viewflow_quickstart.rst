@@ -198,7 +198,7 @@ instance method, or any Python callable.
 Enable frontend
 ===============
 
-Here we can start to write a lot of templates for flow list, actions,
+Here we could start to write a lot of templates for flow list, actions,
 task details and task execution views. Viewflow comes with prebuild
 frontend module, which provides ready to use UI, let's just enable it.
 

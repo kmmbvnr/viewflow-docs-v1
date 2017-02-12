@@ -20,9 +20,9 @@ flow task or gateway. A task could be a human action, synchronous or
 asynchronous Python job or even handler. Gateway is a non-interactive
 node that decides what tasks should be activated next.
 
-To connect flow task altogether the special :doc:`this
+To connect flow tasks altogether the special :doc:`this
 <viewflow_core_this>` object can be used to make references
-to flow nodes or flow methods before they declared.
+to flow nodes or flow methods before they are declared.
 
 .. code-block:: python
 
@@ -45,7 +45,7 @@ to flow nodes or flow methods before they declared.
         def is_completed(self, activation):
             retun activation.process.completed
         
-At runtime each node represented as a task :doc:`activation
+At runtime each node is represented as a task :doc:`activation
 <viewflow_core_activation>` instance. Activation instance is
 responsible for precondition check, task and process state transition
 management, and next tasks instantiation. Each flow node could have
@@ -71,7 +71,7 @@ active task, and revert completed respectively.
 Database
 ========
 
-In a database, state of the flows stored in the two Process/Task
+In a database, state of the flows is stored in the two Process/Task
 :doc:`models <viewflow_core_models>`, task and process states are
 managed by tasks activation classes
 
@@ -101,7 +101,7 @@ Views
 =====
 
 Viewflow core is independent of a particular view implementation. With
-viewflow, you can use as class-based views as functional based
+viewflow, you can use both class-based views and functional based
 views. :doc:`viewflow.flow <viewflow_flow>` package provides standard
 django template based views, :doc:`viewflow.rest <viewflow_rest>` is
 the reference rest implementation.
