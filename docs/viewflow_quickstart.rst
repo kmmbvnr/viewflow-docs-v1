@@ -113,7 +113,7 @@ Open the `demo/helloworld/flows.py` file and define:
            
     from viewflow import flow
     from viewflow.base import this, Flow
-    from viewflow.views import CreateProcessView, UpdateProcessView
+    from viewflow.flow.views import CreateProcessView, UpdateProcessView
 
     from .models import HelloWorldProcess
 
