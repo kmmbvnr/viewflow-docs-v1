@@ -40,8 +40,8 @@ To install from requirements.txt, the following statment could be added on top o
     --extra-index-url https://pypi.viewflow.io/<licence_id>/
 
 
-3d party documentation
-======================
+3rd party documentation
+=======================
 
 You may also interest in the documentation for underline components
 of the Viewflow and Django-Material
