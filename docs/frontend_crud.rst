@@ -22,7 +22,7 @@ And add an entry to the `myapp/urls.py`
     from django.conf.urls import url, include
     from django.views import generic
     from . import views
-                
+
     urlpatterns = [
         url('^$', generic.RedirectView.as_view(url='./mymodel/', permanent=False), name="index"),
         url('^mymodel/', include(views.MyModelViewSet().urls)),
@@ -32,12 +32,16 @@ And add an entry to the `myapp/urls.py`
 `ModelViewSet` class is pretty similar to the
 `django.contrib.admin.ModelAdmin` except the all CRUD actions
 implemented in the separated class bases views.
-    
+
 API
 ===
 
 .. autoclass:: material.frontend.views.ModelViewSet
-      :members:
+   :members:
+
+   .. method:: get_queryset(self, request)
+
+      If defined, provides a default value for views queryset.
 
 .. autoclass:: material.frontend.views.CreateModelView
       :members:
@@ -65,4 +69,3 @@ API
 
 .. autoclass:: material.frontend.views.actions.DeleteActionView
       :members:
-
