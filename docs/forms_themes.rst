@@ -16,7 +16,17 @@ and admin also.
         'material',
         ...
     ]
-                
+
+After theme change, press Ctrl-F5 to reload the page and refresh browser cache.
+
+For the production deployment, consider to set::
+
+  STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.CachedStaticFilesStorage'
+
+.. seealso::
+   :class:`django.contrib.staticfiles.storage.CachedStaticFilesStorage`
+
+
 List of build-in themes
 -----------------------
 
@@ -40,6 +50,7 @@ List of build-in themes
     <span class="theme white-text deep-orange darken-2">deeporange</span>
     <span class="theme white-text brown darken-2">brown</span>
     <span class="theme white-text blue-grey darken-4">bluegrey</span>
+
 
 Custom theme generator
 ----------------------
