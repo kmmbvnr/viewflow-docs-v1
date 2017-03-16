@@ -11,3 +11,4 @@ Table of Contents
 
    thirdparty_packages_celery
    thirdparty_packages_redis
+   thirdparty_packages_django_guardian

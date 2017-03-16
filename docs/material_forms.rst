@@ -87,4 +87,5 @@ Table of  Contents
    forms_layout
    forms_themes
    forms_formsets
+   forms_widgets
 

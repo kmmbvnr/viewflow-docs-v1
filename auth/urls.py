@@ -5,6 +5,7 @@ from django.conf.urls import include, url
 from django.contrib import admin
 from django.http import Http404
 from django.views import static
+from django.views.decorators.cache import never_cache
 
 
 BotNames = [
@@ -58,7 +59,7 @@ def serve(request):
 
     if os.path.exists(absolute_path):
         document_root, path = os.path.split(absolute_path)
-        return static.serve(request, path, document_root=document_root)
+        return never_cache(static.serve)(request, path, document_root=document_root)
     else:
         raise Http404
 
