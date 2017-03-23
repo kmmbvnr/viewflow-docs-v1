@@ -100,12 +100,12 @@ settings for the django template loader::
 
   <!-- here you can override any pre-existing in admin/base.html blocks -->
 
-{% block extracss %}
+{% block extrastyle %}
 --------------------
 
 Include any additionaly css files::
 
-  {% block extracss %}
+  {% block extrastyle %}
       <link href="{% static 'myapp/css/mystyle.css' %}"  rel="stylesheet">
   {% endblock %}
 
