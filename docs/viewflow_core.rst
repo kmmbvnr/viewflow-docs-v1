@@ -103,8 +103,7 @@ Views
 Viewflow core is independent of a particular view implementation. With
 viewflow, you can use both class-based views and functional based
 views. :doc:`viewflow.flow <viewflow_flow>` package provides standard
-django template based views, :doc:`viewflow.rest <viewflow_rest>` is
-the reference rest implementation.
+django template based views.
 
 Each viewflow view expects to get `flow_task` and `flow_class` from
 the URL config. Task views also expect that `process_pk` and `task_pk`
