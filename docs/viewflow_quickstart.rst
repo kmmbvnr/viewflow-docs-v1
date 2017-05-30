@@ -1,5 +1,5 @@
 ==========
-Quck start
+Quick start
 ==========
 
 This tutorial shows how to create basic Hello World application where
