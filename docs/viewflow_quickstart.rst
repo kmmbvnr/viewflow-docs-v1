@@ -6,8 +6,8 @@ This tutorial shows how to create basic Hello World application where
 one person starts "Hello, world" request, another one approves it, and
 when approved the request sent out.
 
-To follow the tutorial, you need to have Python 3.4+ installed. To run
-viewflow with Python 2.7, you need to have PRO license.
+To follow the tutorial, you need to use Python>=3.4, but since 1.0
+django-viewflow works also with Python 2.7
 
 
 Initial steps
