@@ -11,6 +11,7 @@ would be applied, and the same form could be utilized to form autocomplete sugge
 
 Function based view integration sample::
 
+  from django.http import JsonResponse, QueryDict
   from material.forms import AjaxModelSelect, get_ajax_suggestions
 
   class AddressForm(forms.ModelForm):
