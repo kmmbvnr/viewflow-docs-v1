@@ -27,7 +27,7 @@ At first install viewflow package and django-material to enable pre-build fronte
 
 .. code-block:: shell
 
-    pip install django django-material viewflow
+    pip install django django-material django-viewflow
 
 
 In the current directory, scaffold a new django project:
