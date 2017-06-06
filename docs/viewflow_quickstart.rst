@@ -41,7 +41,7 @@ Create an app:
 .. code-block:: shell
 
    mkdir demo/helloworld
-    ./manage.py startapp hellowold demo/helloworld
+    ./manage.py startapp helloworld demo/helloworld
 
 
 Now you should have following file structure:
@@ -158,7 +158,7 @@ Open the `demo/helloworld/flows.py` file and define:
 
 Viewflow proceeds all applications flows from the `flows.py` file.
 
-- Each flow is a Python class that subclasses `viwflow.base.Flow`
+- Each flow is a Python class that subclasses `viewflow.base.Flow`
 - Each attribute represents a flow task
 - To connect flow task altogether, the special `this` object can be
   used to make forward references
