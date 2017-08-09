@@ -74,6 +74,7 @@ Table of Contents
    viewflow_quickstart
    viewflow_core
    viewflow_flow
+   viewflow_rest
    viewflow_frontend
    material_forms
    material_admin
