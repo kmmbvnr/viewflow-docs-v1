@@ -25,8 +25,8 @@ To install it, just add the `material.dashboard` in the
          ...
     )
 
-After installation, there is the default user dashbaord shown. When
-any other custom dashboard is registred, they would replace the
+After installation, there is the default user dashboard shown. When
+any other custom dashboard is registered, they would replace the
 default dashboard.
 
 

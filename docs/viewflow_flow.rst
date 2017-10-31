@@ -30,6 +30,6 @@ Table of Contents
    viewflow_flow_views_start
    viewflow_flow_views_task
    viewflow_flow_viewset
-   viewflow_flow_tempatetags
+   viewflow_flow_templatetags
    viewflow_flow_views_mixins
    viewflow_flow_views_utils

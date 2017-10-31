@@ -60,11 +60,11 @@ active task, and revert completed respectively.
     @flow.flow_view
     def cancel_task_view(request, **kwargs):
         if not activation.cancel.can_proceed():
-             returun redirect('index')
+             return redirect('index')
 
         if request.method == 'POST':
              activation.cancel()
-             returun redirect('index')
+             return redirect('index')
 
         return render(request, 'cancel_task.html')
 
@@ -123,7 +123,7 @@ URLs
 
 `Flow.urls` contains all views and task actions URLs and can be used
 directly in the URL config. `viewflow.flow.viewset.FlowViewset` and
-`viewflow.rest.viewt.FlowViewset` builds a URL config that contains
+`viewflow.rest.view.FlowViewset` builds a URL config that contains
 list views (ex: inbox) besides. If you use the viewflow frontend, no
 specific URL configuration is required.
 

@@ -12,7 +12,7 @@ allows to build big modular websites.
 - Ready to use theme build with ``MaterialzeCSS``
 - Autocollected site navigation menu
 - Fast and smooth navigation with Turbolinks
-- CRUD scatffolding build with django class based views
+- CRUD scaffolding build with django class based views
 - Out of the box datatables integration.
 
  
@@ -61,7 +61,7 @@ To manually create a new module add `ModuleMixin` to the `AppConfig` definition 
         icon = '<i class="material-icons">flight_takeoff</i>'
 
 The application have to have <app_module>/urls.py file, with
-a single no-parametrized url with name='index', ex
+a single no-parameterized url with name='index', ex
 
 .. code-block:: python
 

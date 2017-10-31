@@ -27,9 +27,9 @@ Add `material.frontend` and `viewflow.frontend` into INSTALLED_APPS settings
              ...
     )
 
-*NOTE:* to redefine standard viewfow templates, 'viewflow.frontend' should be added before 'django.contrib.admin'
+*NOTE:* to redefine standard viewflow templates, 'viewflow.frontend' should be added before 'django.contrib.admin'
 
-Add frontend urls into global urlconf module at urls.py
+Add frontend urls into global url config module at urls.py
 
 .. code-block:: python
 

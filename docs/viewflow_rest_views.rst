@@ -85,7 +85,7 @@ Schema
    :members:
 
 
-.. autoclass:: viewflow.rest.views.chart.ShemaView
+.. autoclass:: viewflow.rest.views.chart.SchemaView
    :members:
 
 

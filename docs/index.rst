@@ -36,7 +36,7 @@ django 1.8/1.9/1.10/1.11::
 
     pip install django-viewflow-pro  --extra-index-url https://pypi.viewflow.io/<licence_id>/simple/
 
-To install from requirements.txt, the following statment could be added on top of the file::
+To install from requirements.txt, the following statement could be added on top of the file::
 
     --extra-index-url https://pypi.viewflow.io/<licence_id>/
 

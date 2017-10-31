@@ -14,8 +14,8 @@ Arguments sent with any of viewflow signals:
       Task instance
 
 
-Flow livecycle signals
-======================
+Flow live cycle signals
+=======================
 
 .. autoattribute:: viewflow.signals.flow_started
    :annotation:
@@ -28,8 +28,8 @@ Happens when flow start task done
 Happens right after process had finished
 
 
-Task livecycle signals
-======================
+Task live cycle signals
+=======================
 
 .. autoattribute:: viewflow.signals.task_started
    :annotation:
@@ -42,7 +42,7 @@ Happens when long running task starts execution
 
     Happens on flow task error
 
-    Additional agruments
+    Additional arguments
 
     ``exception``
       Exception instance

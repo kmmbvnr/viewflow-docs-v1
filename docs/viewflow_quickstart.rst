@@ -14,7 +14,7 @@ Initial steps
 =============
 
 
-Let's create a fresh virtualenv for the demo project. In an empty
+Let's create a fresh virtual environment for the demo project. In an empty
 directory run the following commands.
 
 .. code-block:: shell
@@ -199,7 +199,7 @@ Enable frontend
 ===============
 
 Here we could start to write a lot of templates for flow list, actions,
-task details and task execution views. Viewflow comes with prebuild
+task details and task execution views. Viewflow comes with pre-build
 frontend module, which provides ready to use UI, let's just enable it.
 
 First, adds the required apps to the `INSTALLED_APPS`
