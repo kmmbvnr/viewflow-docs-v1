@@ -79,7 +79,6 @@ Table of Contents
    material_forms
    material_admin
    material_frontend
-   material_dashboard
    thirdparty_packages
 
 

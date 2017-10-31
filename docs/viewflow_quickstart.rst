@@ -1,6 +1,6 @@
-==========
+===========
 Quick start
-==========
+===========
 
 This tutorial shows how to create basic Hello World application where
 one person starts "Hello, world" request, another one approves it, and

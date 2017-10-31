@@ -23,8 +23,8 @@ API
    :members:
 
 .. autoclass:: viewflow.rest.flow.If
-    :show-inheritance:
-    :inherited-members:
+   :show-inheritance:
+   :inherited-members:
    :members:
 
 .. autoclass:: viewflow.rest.flow.Switch
