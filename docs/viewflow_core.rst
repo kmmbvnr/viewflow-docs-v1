@@ -32,7 +32,7 @@ to flow nodes or flow methods before they are declared.
     class SampleFlow(Flow):
         start = flow.Start(my_view).Next(this.task)
 
-        task = flow.Handler(perform_task)retun.Next(this.check_status)
+        task = flow.Handler(perform_task).Next(this.check_status)
 
         check_status = flow.If(this.is_completed) \
             .Then(this.end).Else(this.task)
