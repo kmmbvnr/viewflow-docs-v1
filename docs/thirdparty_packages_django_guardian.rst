@@ -24,10 +24,4 @@ to provide an object to restrict a task access permission::
 
 Queue View would restrict available tasks based on user object-level permissions.
 
-The live demo: https://github.com/viewflow/cookbook/tree/master/guardian
-
-
-Material Admin
-==============
-
-django-guardian and material admin Works out of the box.
+Demo: https://github.com/viewflow/cookbook/tree/master/guardian
