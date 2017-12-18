@@ -77,7 +77,6 @@ Table of Contents
    viewflow_rest
    viewflow_frontend
    material_forms
-   material_admin
    material_frontend
    thirdparty_packages
 
