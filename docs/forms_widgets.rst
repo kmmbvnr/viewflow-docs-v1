@@ -26,7 +26,8 @@ Function based view integration sample::
        form = AddressForm(request.POST or None)
        
        if request.method == 'OPTIONS':
-           options = QueryDict(request.body, encoding=request.encoding)
+           query = self.request.META.get('HTTP_X_REQUEST_AUTOCOMPLETE', self.request.body)
+           options = QueryDict(query, encoding=request.encoding)
            field = form.base_fields.get(options.get('field'))
            query = options.get('query')
                  
