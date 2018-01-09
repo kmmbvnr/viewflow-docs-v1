@@ -218,6 +218,7 @@ First, adds the required apps to the `INSTALLED_APPS`
 Add frontend URLs into global URL conf module at `demo/urls.py`
 
 .. code-block:: python
+
     from django.conf.urls import include, url
     from django.views import generic
     from material.frontend import urls as frontend_urls
