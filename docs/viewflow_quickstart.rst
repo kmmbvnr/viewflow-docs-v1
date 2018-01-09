@@ -86,7 +86,7 @@ Define models
 =============
 
 Open `demo/helloworld/models.py` file and define a process model with `text` and `approved` fields,
-to capture process state during execution.
+to capture the process state during execution.
 
 .. code-block:: python
 
@@ -102,7 +102,7 @@ to capture process state during execution.
 Define flow
 ===========
 
-Let's take a look at the flow BPMN diagram. We going to map each shape
+Let's take a look at the flow BPMN diagram. We are going to map each shape
 to the corresponding flow node definition.
 
 .. image:: _static/HelloWorld.png
@@ -156,21 +156,21 @@ Open the `demo/helloworld/flows.py` file and define:
         def send_hello_world_request(self, activation):
             print(activation.process.text)
 
-Viewflow proceeds all applications flows from the `flows.py` file.
+Viewflow proceeds all application flows from the `flows.py` file.
 
 - Each flow is a Python class that subclasses `viewflow.base.Flow`
 - Each attribute represents a flow task
-- To connect flow task altogether, the special `this` object can be
+- To connect flow tasks altogether, the special `this` object can be
   used to make forward references
 
-`flow.Start` represents a task that performed by a person in a django
+`flow.Start` represents a task that is performed by a person in a Django
 view. For the tutorial purpose, we use built-in
 `CreateProcessView`. But any class or functional based view annotated
 with `@flow.flow_start_view` decorator can be used here.
 
 `flow.Task` is a user task for an existing process.
 
-Tasks execution rights could be restricted by the django permission
+Tasks execution rights could be restricted by the Django permission
 system. You can specify a permission name here or set
 `auto_create=True` that leads to creating special permission for the
 task. In our case, we will have
@@ -182,14 +182,14 @@ addition, two standard permissions would be created
 administrative actions views.
 
 `flow.If` is the simple exclusive gateway. It selects an outcome
-depends on a callable result. For the input, callable gets a task
+depending on a callable result. For the input, callable gets a task
 `activation` - an object that handles current task processing logic,
-and that have a `activation.process` and `activation.task` fields
-initialized with corresponding model instances.
+and that has an `activation.process` and `activation.task` fields
+initialized with the corresponding model instances.
 
-If the request was approved, the `flow.Handler` would be
-executed. `flow.Handler` is the task performed by synchronous call a
-python code. Here a `this` reference could be used to point to a flow
+If the request is approved, the `flow.Handler` will be
+executed. `flow.Handler` is the task performed by synchronous Python
+code call. Here a `this` reference could be used to point to a flow
 instance method, or any Python callable.
 
 `flow.End` finalizes the process and marks it as completed.
@@ -218,7 +218,7 @@ First, adds the required apps to the `INSTALLED_APPS`
 Add frontend URLs into global URL conf module at `demo/urls.py`
 
 .. code-block:: python
-
+    from django.conf.urls import include, url
     from django.views import generic
     from material.frontend import urls as frontend_urls
 
