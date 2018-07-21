@@ -228,7 +228,7 @@ Add frontend URLs into global URL conf module at `demo/urls.py`
         url(r'', include(frontend_urls)),
     ]
 
-At the last step, register our flow in the `viewflow.frontend`.
+At the last step, open demo/helloworld/flows.py and register our flow in the `viewflow.frontend`.
 
 .. code-block:: python
 
