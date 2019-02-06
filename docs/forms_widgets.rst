@@ -4,6 +4,9 @@ Widgets
 
 **PRO Only**
 
+Autocomplete
+============
+
 `AjaxModelSelect` and `AjaxMultipleModelSelect` provides autocomplete widgets for the django-material.
 Unlike other implementations, they not requires a separate autocomplete view registered. Instead, the
 autocomplete widgets sends HTTP OPTIONS request to the same view. So the same user permissions check
@@ -56,8 +59,6 @@ Class based view integration sample::
 
    `Redesigning an autocomplete for Django <https://medium.com/@viewflow/redesigning-an-autocomplete-for-django-1994fd07c0a6>`_
 
-API
-===
 
 .. autoclass:: material.forms.AjaxModelSelect
 
@@ -66,3 +67,9 @@ API
 .. autoclass:: material.forms.FormAjaxCompleteMixin
 
 .. autofunction:: material.forms.get_ajax_suggestions
+
+
+WYSIWYG Editor
+==============
+
+.. autoclass:: material.forms.MediumEditorWidget
