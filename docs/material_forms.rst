@@ -22,7 +22,7 @@ Forms are rendered  with `MaterializeCSS
 Installation
 ============
 
-django-material tested with Python 2.7/3.4/3.5, django 1.8/1.9/1.10::
+django-material tested with Python 2.7/3.6/3.7, django 1.11/2.0/2.1/2.2::
 
     pip install django-material
 
