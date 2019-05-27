@@ -5,7 +5,7 @@ Customization
 Template blocks
 ===============
 
-You can override `material/frontend/base_site.html` to customize django material admin look and feel.
+You can override `material/frontend/base_site.html` to customize django material look and feel.
 
 To override any application template in django, you can set `DIRS`
 settings for the django template loader::
@@ -80,14 +80,16 @@ Include additional items on the side bar::
 Additional links on the top bar::
 
     {% block userlinks %}
-    <li>
-      <a class="dropdown-button" href="#!" data-activates="user-menu">
-           <i class="material-icons right">arrow_drop_down</i>Menu
-      </a>
-    </li>
-    <ul id="user-menu" class="dropdown-content"  style="min-width:200px">
-        <li><a href="#">Item 1</li>
-        <li><a href="#">Item 2</li>
-    </ul>
+    <dmc-dropdown>
+      <li>
+        <a class="dropdown-button" href="#!" data-activates="user-menu">
+            <i class="material-icons right">arrow_drop_down</i>Menu
+        </a>
+      </li>
+      <ul id="user-menu" class="dropdown-content"  style="min-width:200px">
+          <li><a href="#">Item 1</li>
+          <li><a href="#">Item 2</li>
+      </ul>
+    </dmc-dropdown>
     {{ block.super }}
     {% endblock %}

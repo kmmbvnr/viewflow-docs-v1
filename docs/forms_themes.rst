@@ -6,8 +6,7 @@ Several pre-build themes available withing the `django-material`
 package. To enable a theme just put the desired theme application into
 the `INSTALLED_APPS` setting before the `material` app.
 
-Theme applications contains CSS and images for the material frontend
-and admin also.
+Theme applications contains CSS and images for the material frontend.
 
 .. code-block:: python
 
