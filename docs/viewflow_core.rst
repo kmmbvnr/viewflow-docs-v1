@@ -43,7 +43,7 @@ to flow nodes or flow methods before they are declared.
              activation.process.completed = random.randint(0, 1)
 
         def is_completed(self, activation):
-            retun activation.process.completed
+            return activation.process.completed
         
 At runtime each node is represented as a task :doc:`activation
 <viewflow_core_activation>` instance. Activation instance is
@@ -59,6 +59,7 @@ active task, and revert completed respectively.
 
     @flow.flow_view
     def cancel_task_view(request, **kwargs):
+        activation = request.activation
         if not activation.cancel.can_proceed():
              return redirect('index')
 
