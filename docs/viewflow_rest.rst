@@ -104,14 +104,14 @@ Without frontend you need directly include flowset urls in the django's URL conf
 
 .. code-block:: python
 
-    from django.conf.urls import url, include
+    from django.urls import path, include
     from viewflow.rest.viewset import FlowViewSet
     from .flows import HelloWorldFlow
 
     hello_urls = FlowViewSet(HelloWorldFlow).urls
 
     urlpatterns = [
-        url(r'^workflow/api/helloworld/', include(hello_urls, namespace='helloworld'))
+        path('workflow/api/helloworld/', include(hello_urls, namespace='helloworld'))
     ]
 
 

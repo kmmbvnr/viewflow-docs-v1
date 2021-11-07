@@ -37,7 +37,7 @@ Add frontend urls into global url config module at urls.py
 
     urlpatterns = [
         ...
-        url(r'', include(frontend_urls)),
+        path('', include(frontend_urls)),
     ]
 
 

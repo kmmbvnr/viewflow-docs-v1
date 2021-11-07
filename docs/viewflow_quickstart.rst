@@ -219,13 +219,13 @@ Add frontend URLs into global URL conf module at `demo/urls.py`
 
 .. code-block:: python
 
-    from django.conf.urls import include, url
+    from django.urls import include, path
     from django.views import generic
     from material.frontend import urls as frontend_urls
 
     urlpatterns = [
-        url(r'^$', generic.RedirectView.as_view(url='/workflow/', permanent=False)),
-        url(r'', include(frontend_urls)),
+        path(r'', generic.RedirectView.as_view(url='/workflow/', permanent=False)),
+        path(r'', include(frontend_urls)),
     ]
 
 At the last step, register our flow in the `viewflow.frontend`.

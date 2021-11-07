@@ -19,13 +19,13 @@ And add an entry to the `myapp/urls.py`
 
 .. code-block:: python
 
-    from django.conf.urls import url, include
+    from django.urls import path, include
     from django.views import generic
     from . import views
 
     urlpatterns = [
-        url('^$', generic.RedirectView.as_view(url='./mymodel/', permanent=False), name="index"),
-        url('^mymodel/', include(views.MyModelViewSet().urls)),
+        path('', generic.RedirectView.as_view(url='./mymodel/', permanent=False), name="index"),
+        path('mymodel/', include(views.MyModelViewSet().urls)),
         ...
     ]
 

@@ -130,7 +130,7 @@ specific URL configuration is required.
 .. code-block:: python
 
     ulrpatterns = [
-        url(r'^sampleflow/', SampleFlow.instance.urls)
+        path('sampleflow/', SampleFlow.instance.urls)
     ]
 
 or, with build-in list views:
@@ -140,7 +140,7 @@ or, with build-in list views:
     from viewflow.flow.viewset import FlowViewSet
     
     ulrpatterns = [
-        url(r'^sampleflow/', FlowViewSet(SampleFlow).urls)
+        path('sampleflow/', FlowViewSet(SampleFlow).urls)
     ]
 
 or, in the case of viewflow frontend
@@ -150,7 +150,7 @@ or, in the case of viewflow frontend
    from material.frontend import urls as frontend_urls
 
     urlpatterns = [
-        url(r'', include(frontend_urls)),
+        path(r'', include(frontend_urls)),
     ]
 
 Error handling

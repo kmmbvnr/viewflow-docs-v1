@@ -7,7 +7,7 @@ from django.conf import settings
 settings.configure(
     DEBUG=True,
     SECRET_KEY='doc',
-    INSTALLED_APPS=('viewflow', 'django.contrib.contenttypes'),
+    INSTALLED_APPS=('django.contrib.contenttypes',),
     MIDDLEWARE=(),
 )
 django.setup()
