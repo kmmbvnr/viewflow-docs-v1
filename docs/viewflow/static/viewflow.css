@@ -1,6 +1,8 @@
 /* Common elemen styles */
 h1 {
     font-size: 3rem;
+    color: white;
+    padding-bottom: 25px;
 }
 
 h2 {
