@@ -7,9 +7,9 @@ from django.conf import settings
 settings.configure(
     DEBUG=True,
     SECRET_KEY='doc',
-    INSTALLED_APPS=('django.contrib.contenttypes',),
+    INSTALLED_APPS=('django.contrib.contenttypes', 'viewflow',),
     MIDDLEWARE=(),
-    DATABASES={'default': {'ENGINE': ''}}
+    DATABASES={'default': {'ENGINE': ''}},
 )
 django.setup()
 
