@@ -9,6 +9,7 @@ settings.configure(
     SECRET_KEY='doc',
     INSTALLED_APPS=('django.contrib.contenttypes',),
     MIDDLEWARE=(),
+    DATABASES={'default': {'ENGINE': ''}}
 )
 django.setup()
 
