@@ -60,7 +60,10 @@ ul.simple {
 ul.simple li {
     list-style-type: circle;
     padding-left: 20px;
-    padding-bottom: 10px;
+}
+
+pre {
+    padding: 20px;
 }
 
 cite {
