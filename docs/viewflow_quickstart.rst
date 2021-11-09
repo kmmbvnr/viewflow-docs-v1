@@ -40,8 +40,7 @@ Create an app:
 
 .. code-block:: shell
 
-   mkdir demo/helloworld
-    ./manage.py startapp helloworld demo/helloworld
+    ./manage.py startapp helloworld
 
 
 Now you should have following file structure:
@@ -49,22 +48,21 @@ Now you should have following file structure:
 .. code-block:: shell
 
     demo/
-    ├── admin.py
-    ├── apps.py
-    ├── helloworld
-    │   ├── admin.py
-    │   ├── apps.py
-    │   ├── __init__.py
-    │   ├── migrations
-    │   │   └── __init__.py
-    │   ├── models.py
-    │   ├── tests.py
-    │   └── views.py
+    ├── asgi.py
     ├── __init__.py
     ├── settings.py
     ├── urls.py
-    ├── views.py
     └── wsgi.py
+    helloworld
+    ├── admin.py
+    ├── apps.py
+    ├── __init__.py
+    ├── migrations
+    │   └── __init__.py
+    ├── models.py
+    ├── tests.py
+    └── views.py
+    manage.py
 
 
 Configuration
@@ -78,14 +76,14 @@ into `INSTALLED_APPS` setting
     INSTALLED_APPS = [
         ...
         'viewflow',
-        'demo.helloworld',
+        'helloworld',
     ]
 
 
 Define models
 =============
 
-Open `demo/helloworld/models.py` file and define a process model with `text` and `approved` fields,
+Open `helloworld/models.py` file and define a process model with `text` and `approved` fields,
 to capture the process state during execution.
 
 .. code-block:: python
