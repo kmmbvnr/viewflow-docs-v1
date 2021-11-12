@@ -10,6 +10,9 @@ settings.configure(
     INSTALLED_APPS=('django.contrib.contenttypes', 'viewflow',),
     MIDDLEWARE=(),
     DATABASES={'default': {'ENGINE': ''}},
+    REST_FRAMEWORK={
+        'DEFAULT_SCHEMA_CLASS': 'rest_framework.schemas.coreapi.AutoSchema'
+    },
 )
 django.setup()
 
