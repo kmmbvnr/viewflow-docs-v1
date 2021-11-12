@@ -34,7 +34,7 @@ Start with adding `viewflow`, `viewflow.rest` and dependencies to the `INSTALLED
     INSTALLED_APPS = [
         ...,
         'viewflow',
-        'viewflow.rest',
+        'viewflow.rest.apps.ViewflowRestNSConfig',
         'rest_framework',
         'rest_framework_swagger',
     ]
