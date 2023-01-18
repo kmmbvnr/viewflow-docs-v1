@@ -27,9 +27,7 @@ library itself, or accompanied with pre-built UI frontend.
 Installation
 ============
 
-django-viewflow works with Python 2.7 and Python 3.6 or greater,
-django 1.11/2.0/2.1/2.2::
-
+Viewflow works with Python 3.8 or greater and Django 4.0+:
     pip install django-viewflow
 
 `Viewflow PRO <http://viewflow.io/pro/>`_::
